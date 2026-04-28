@@ -83,6 +83,10 @@ The flagship multi-MCP reference integration is [RoxyAPI/astrology-ai-chatbot](h
 
 ## Verified accuracy
 
+<a href="https://roxyapi.com/methodology">
+  <img src="https://raw.githubusercontent.com/RoxyAPI/.github/main/profile/assets/verified.png" alt="Verified accuracy. Cross-checked against NASA JPL Horizons. Open methodology and public benchmark." width="100%">
+</a>
+
 Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the moat.
 
 - Powered by **Roxy Ephemeris**, cross-referenced against **NASA JPL Horizons DE441** as the physics ground truth.
