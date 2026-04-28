@@ -108,6 +108,6 @@ Open-source starters that wrap RoxyAPI into a working app you can fork and ship:
 
 ## Contact
 
-Questions, integration help, or partnership inquiries: hello@roxyapi.com.
+Questions, integration help, or partnership inquiries: [roxyapi.com/contact](https://roxyapi.com/contact).
 
 Built by [Roxy Labs](https://roxyapi.com). The Stripe of insight APIs.
