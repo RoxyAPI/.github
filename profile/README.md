@@ -1,3 +1,7 @@
+<a href="https://roxyapi.com">
+  <img src="https://raw.githubusercontent.com/RoxyAPI/.github/main/profile/assets/hero.png" alt="RoxyAPI. The data layer for insight, belief, and prediction products. Astrology, Vedic, tarot, numerology, and more behind one API key." width="100%">
+</a>
+
 # RoxyAPI
 
 [![Live API](https://img.shields.io/badge/API-Live_playground-1f6feb?style=flat-square&logo=swagger&logoColor=white)](https://roxyapi.com/api-reference)
