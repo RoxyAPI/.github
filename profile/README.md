@@ -1,11 +1,12 @@
 # RoxyAPI
 
-[![Live API](https://img.shields.io/badge/API-Live_playground-1f6feb?style=flat-square&logo=swagger&logoColor=white)](https://roxyapi.com/docs)
+[![Live API](https://img.shields.io/badge/API-Live_playground-1f6feb?style=flat-square&logo=swagger&logoColor=white)](https://roxyapi.com/api-reference)
 [![Methodology](https://img.shields.io/badge/Methodology-NASA_JPL_verified-fb923c?style=flat-square)](https://roxyapi.com/methodology)
 [![Benchmark](https://img.shields.io/badge/Benchmark-Open_%26_MIT-22c55e?style=flat-square&logo=github&logoColor=white)](https://github.com/RoxyAPI/astrology-api-benchmark)
-[![Pricing](https://img.shields.io/badge/Pricing-5K_to_1M_req%2Fmo-0ea5e9?style=flat-square)](https://roxyapi.com/pricing)
-[![Starters](https://img.shields.io/badge/Starters-7_templates-8b5cf6?style=flat-square)](https://roxyapi.com/starters)
-[![MCP](https://img.shields.io/badge/MCP-10_remote_servers-ec4899?style=flat-square)](https://roxyapi.com/docs/mcp)
+[![Pricing](https://img.shields.io/badge/Pricing-Plans_%26_quotas-0ea5e9?style=flat-square)](https://roxyapi.com/pricing)
+[![Starters](https://img.shields.io/badge/Starters-Open_source-8b5cf6?style=flat-square)](https://roxyapi.com/starters)
+[![MCP](https://img.shields.io/badge/MCP-Remote_%26_no_setup-ec4899?style=flat-square)](https://roxyapi.com/docs/mcp)
+
 [![npm](https://img.shields.io/npm/v/@roxyapi/sdk?style=flat-square&logo=npm&label=%40roxyapi%2Fsdk)](https://www.npmjs.com/package/@roxyapi/sdk)
 [![PyPI](https://img.shields.io/pypi/v/roxy-sdk?style=flat-square&logo=pypi&logoColor=white&label=roxy-sdk)](https://pypi.org/project/roxy-sdk/)
 
@@ -36,7 +37,8 @@ Every endpoint returns structured JSON, ships rich field descriptions for tool-c
 
 | Surface | URL |
 |---|---|
-| Live API docs and playground | https://roxyapi.com/docs |
+| Live API playground | https://roxyapi.com/api-reference |
+| Documentation and guides | https://roxyapi.com/docs |
 | Pricing | https://roxyapi.com/pricing |
 | Methodology and accuracy | https://roxyapi.com/methodology |
 | Public benchmark (open, MIT) | https://github.com/RoxyAPI/astrology-api-benchmark |
@@ -97,8 +99,8 @@ Open-source starters that wrap RoxyAPI into a working app you can fork and ship:
 
 ## Get started
 
-1. Grab a key at [roxyapi.com/pricing](https://roxyapi.com/pricing). Plans run from 5K to 1M requests per month, all 10 domains included.
-2. Try the playground at [roxyapi.com/docs](https://roxyapi.com/docs).
+1. Grab a key at [roxyapi.com/pricing](https://roxyapi.com/pricing). Every plan includes every domain.
+2. Try the live playground at [roxyapi.com/api-reference](https://roxyapi.com/api-reference).
 3. Install an SDK or point your MCP client at one of the endpoints above.
 4. Ship.
 
