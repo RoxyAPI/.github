@@ -1,5 +1,14 @@
 # RoxyAPI
 
+[![Live API](https://img.shields.io/badge/API-Live_playground-1f6feb?style=flat-square&logo=swagger&logoColor=white)](https://roxyapi.com/docs)
+[![Methodology](https://img.shields.io/badge/Methodology-NASA_JPL_verified-fb923c?style=flat-square)](https://roxyapi.com/methodology)
+[![Benchmark](https://img.shields.io/badge/Benchmark-Open_%26_MIT-22c55e?style=flat-square&logo=github&logoColor=white)](https://github.com/RoxyAPI/astrology-api-benchmark)
+[![Pricing](https://img.shields.io/badge/Pricing-5K_to_1M_req%2Fmo-0ea5e9?style=flat-square)](https://roxyapi.com/pricing)
+[![Starters](https://img.shields.io/badge/Starters-7_templates-8b5cf6?style=flat-square)](https://roxyapi.com/starters)
+[![MCP](https://img.shields.io/badge/MCP-10_remote_servers-ec4899?style=flat-square)](https://roxyapi.com/docs/mcp)
+[![npm](https://img.shields.io/npm/v/@roxyapi/sdk?style=flat-square&logo=npm&label=%40roxyapi%2Fsdk)](https://www.npmjs.com/package/@roxyapi/sdk)
+[![PyPI](https://img.shields.io/pypi/v/roxy-sdk?style=flat-square&logo=pypi&logoColor=white&label=roxy-sdk)](https://pypi.org/project/roxy-sdk/)
+
 The data layer for insight, belief, and prediction products.
 
 RoxyAPI is the only multi-domain spiritual intelligence API. 130+ production endpoints across 10 domains behind one API key, with remote MCP servers per product, verified astronomy, and clean commercial licensing. Think of it as the Stripe of insight APIs: AI-native infrastructure for astrology, tarot, numerology, and prediction apps so builders can ship in days instead of months.
@@ -36,9 +45,6 @@ Every endpoint returns structured JSON, ships rich field descriptions for tool-c
 | Agent discovery | https://roxyapi.com/llms.txt |
 
 ## Official SDKs
-
-[![npm](https://img.shields.io/npm/v/@roxyapi/sdk?label=npm)](https://www.npmjs.com/package/@roxyapi/sdk)
-[![PyPI](https://img.shields.io/pypi/v/roxy-sdk?label=PyPI)](https://pypi.org/project/roxy-sdk/)
 
 | Language | Package | Repository |
 |---|---|---|
