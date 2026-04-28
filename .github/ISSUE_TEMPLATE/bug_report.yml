@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a bug in a RoxyAPI repo
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report. For API account, billing, or pricing questions, use https://roxyapi.com/contact instead.
+  - type: input
+    id: repo
+    attributes:
+      label: Affected repo or SDK
+      description: Which RoxyAPI repo or surface has the bug?
+      placeholder: e.g. sdk-typescript, astrology-ai-chatbot, /api/v2/vedic-astrology/birth-chart
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe the bug clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Minimal steps or a code snippet that triggers the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: SDK version, plugin version, or commit SHA
+    validations:
+      required: false
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: Node, Python, PHP, OS, browser, etc.
+    validations:
+      required: false
