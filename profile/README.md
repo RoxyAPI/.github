@@ -8,18 +8,18 @@ Every calculation is rigorously verified against authoritative sources. The proo
 
 ## What RoxyAPI does
 
-One subscription gives builders production-ready access to every major spiritual and prediction domain through a single REST API and a single set of MCP servers. Domains covered:
+One subscription gives builders production-ready access to every major spiritual and prediction domain through a single REST API and a single set of MCP servers. Domains in canonical order:
 
-- Astrology (Western, Vedic, KP) with birth charts, transits, dashas, panchang, kundli, and synastry
-- Numerology (Pythagorean, Chaldean, Life Path, master numbers, karmic debt, personal year)
-- Tarot (deck data, daily pulls, spread generators, deterministic seeded draws)
-- Daily horoscopes (12 zodiac signs, multi-language)
-- Biorhythm (10 cycle types, compatibility, critical-day windows)
-- I Ching (64 hexagrams, changing lines, Wilhelm-style interpretation)
-- Dream interpretation (symbol library plus structured analysis)
-- Crystals (catalog, properties, intentions, chakra mapping)
-- Angel numbers (repeating, sequential, mirror, master patterns)
-- Location and timezone resolution for accurate birth-data inputs
+- **Western astrology**: natal charts, daily horoscopes, weekly and monthly horoscopes, synastry, compatibility scoring, transits, moon phase. Placidus, whole-sign, equal, and Koch house systems.
+- **Vedic and KP astrology**: kundli, detailed panchang (rahu kaal, abhijit muhurta, brahma muhurta, choghadiya, hora), Vimshottari dasha (current period and full 120-year timeline), dosha analysis (Manglik, Kaal Sarp, Sade Sati), navamsa, 36-point Ashtakoota Guna Milan compatibility, plus KP sub-lord, sub-sub-lord, and ruling-planet horary. KP is the sharpest technical differentiator versus generic Vedic providers.
+- **Numerology**: Life Path, full chart, compatibility, personal year, expression. Pythagorean reduction with master-number (11, 22, 33) and karmic-debt detection.
+- **Tarot**: daily card, three-card spread, Celtic Cross, yes-no, love spread, custom draws. Deterministic seeded draws for once-per-day behavior.
+- **Biorhythm**: daily, multi-day forecast, compatibility, critical-day alerts. 10 cycle types.
+- **I Ching**: 64-hexagram catalog, daily hexagram, three-coin cast with changing lines and resulting hexagram.
+- **Crystals**: by zodiac, by chakra, birthstone, free-text search.
+- **Dream interpretation**: symbol catalog, daily symbol, structured meanings.
+- **Angel numbers**: by exact number, universal lookup with digit-root fallback, daily.
+- **Location and timezone resolution** for accurate birth-data inputs (call this first when any chart endpoint needs coordinates).
 
 Every endpoint returns structured JSON, ships rich field descriptions for tool-calling agents, and is callable from REST, the official SDKs, or remote MCP.
 
@@ -70,8 +70,8 @@ RoxyAPI was MCP-first from day one. Every product domain ships its own remote St
 | Tarot | `https://roxyapi.com/mcp/tarot` |
 | Biorhythm | `https://roxyapi.com/mcp/biorhythm` |
 | I Ching | `https://roxyapi.com/mcp/iching` |
-| Dreams | `https://roxyapi.com/mcp/dreams` |
 | Crystals | `https://roxyapi.com/mcp/crystals` |
+| Dreams | `https://roxyapi.com/mcp/dreams` |
 | Angel numbers | `https://roxyapi.com/mcp/angel-numbers` |
 | Location and timezone | `https://roxyapi.com/mcp/location` |
 
@@ -92,11 +92,11 @@ Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the m
 Open-source starters that wrap RoxyAPI into a working app you can fork and ship:
 
 - [astrology-ai-chatbot](https://github.com/RoxyAPI/astrology-ai-chatbot): flagship multi-MCP astrology assistant
-- [astrology-starter-app](https://github.com/RoxyAPI/astrology-starter-app): full astrology app baseline
+- [astrology-starter-app](https://github.com/RoxyAPI/astrology-starter-app): Western astrology baseline
 - [vedic-astrology-starter-app](https://github.com/RoxyAPI/vedic-astrology-starter-app): Vedic and KP focused
-- [jyotish-vedic-astrology-app](https://github.com/RoxyAPI/jyotish-vedic-astrology-app): Indian market Jyotish app
-- [tarot-starter-app](https://github.com/RoxyAPI/tarot-starter-app): tarot reader with seeded draws
+- [jyotish-vedic-astrology-app](https://github.com/RoxyAPI/jyotish-vedic-astrology-app): Indian-market Jyotish app with Kundli, Panchang, Gun Milan, Dasha
 - [numerology-starter-app](https://github.com/RoxyAPI/numerology-starter-app): Life Path, master numbers, karmic debt
+- [tarot-starter-app](https://github.com/RoxyAPI/tarot-starter-app): tarot reader with seeded draws
 - [dreams-starter-app](https://github.com/RoxyAPI/dreams-starter-app): dream journal with interpretation
 
 ## Get started
