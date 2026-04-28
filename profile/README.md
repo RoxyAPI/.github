@@ -23,16 +23,6 @@ One subscription gives builders production-ready access to every major spiritual
 
 Every endpoint returns structured JSON, ships rich field descriptions for tool-calling agents, and is callable from REST, the official SDKs, or remote MCP.
 
-## What you can build
-
-- AI astrology and tarot chatbots backed by Claude, GPT, or Gemini
-- Birth-chart and kundli generators for matrimonial and dating platforms
-- Daily horoscope features embedded in wellness, news, or lifestyle apps
-- Numerology and personality apps for self-discovery and onboarding flows
-- Dream-journal apps with AI interpretation and pattern tracking
-- Spiritual AI agents that reason over birth charts, panchang, dashas, and tarot through MCP tool calls
-- White-label insight engines for coaches, astrologers, and content creators
-
 ## Quick links
 
 | Surface | URL |
