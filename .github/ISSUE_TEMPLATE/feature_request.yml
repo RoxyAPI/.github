@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest a new feature, endpoint, or improvement
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Want a new endpoint, SDK method, or starter feature? Tell us the use case first; we ship from real demand.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem you are trying to solve
+      description: What use case or pain point is this for?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like RoxyAPI to support this?
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+    validations:
+      required: false
