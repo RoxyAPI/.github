@@ -15,6 +15,8 @@
 
 [![npm](https://img.shields.io/npm/v/@roxyapi/sdk?style=flat-square&logo=npm&label=%40roxyapi%2Fsdk)](https://www.npmjs.com/package/@roxyapi/sdk)
 [![PyPI](https://img.shields.io/pypi/v/roxy-sdk?style=flat-square&logo=pypi&logoColor=white&label=roxy-sdk)](https://pypi.org/project/roxy-sdk/)
+[![Packagist](https://img.shields.io/packagist/v/roxyapi/sdk?style=flat-square&logo=packagist&logoColor=white&label=roxyapi%2Fsdk)](https://packagist.org/packages/roxyapi/sdk)
+[![WordPress plugin](https://img.shields.io/badge/WordPress-plugin-21759b?style=flat-square&logo=wordpress&logoColor=white&label=sdk-wordpress)](https://github.com/RoxyAPI/sdk-wordpress)
 
 The data layer for insight, belief, and prediction products.
 
@@ -58,9 +60,10 @@ Every endpoint returns structured JSON, ships rich field descriptions for tool-c
 |---|---|---|
 | TypeScript | `@roxyapi/sdk` | [RoxyAPI/sdk-typescript](https://github.com/RoxyAPI/sdk-typescript) |
 | Python | `roxy-sdk` | [RoxyAPI/sdk-python](https://github.com/RoxyAPI/sdk-python) |
+| PHP | `roxyapi/sdk` | [RoxyAPI/sdk-php](https://github.com/RoxyAPI/sdk-php) |
 | WordPress plugin | RoxyAPI for WordPress | [RoxyAPI/sdk-wordpress](https://github.com/RoxyAPI/sdk-wordpress) |
 
-Both code SDKs are auto-generated from the OpenAPI specification, so new endpoints land in your IDE the day they ship. Each SDK ships an AGENTS.md so AI coding assistants in Cursor, Claude Code, Copilot, and Windsurf know how to call RoxyAPI without prompt-engineering.
+All three code SDKs are auto-generated from the OpenAPI specification, so new endpoints land in your IDE the day they ship. Each SDK ships an AGENTS.md so AI coding assistants in Cursor, Claude Code, Copilot, and Windsurf know how to call RoxyAPI without prompt-engineering.
 
 ## MCP servers
 
