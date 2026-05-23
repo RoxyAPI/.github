@@ -16,11 +16,11 @@
 [![npm](https://img.shields.io/npm/v/@roxyapi/sdk?style=flat-square&logo=npm&label=%40roxyapi%2Fsdk)](https://www.npmjs.com/package/@roxyapi/sdk)
 [![PyPI](https://img.shields.io/pypi/v/roxy-sdk?style=flat-square&logo=pypi&logoColor=white&label=roxy-sdk)](https://pypi.org/project/roxy-sdk/)
 [![Packagist](https://img.shields.io/packagist/v/roxyapi/sdk?style=flat-square&logo=packagist&logoColor=white&label=roxyapi%2Fsdk)](https://packagist.org/packages/roxyapi/sdk)
-[![WordPress plugin](https://img.shields.io/badge/WordPress-plugin-21759b?style=flat-square&logo=wordpress&logoColor=white&label=sdk-wordpress)](https://github.com/RoxyAPI/sdk-wordpress)
+[![WordPress plugin](https://img.shields.io/wordpress/plugin/v/roxyapi?style=flat-square&logo=wordpress&logoColor=white&label=wordpress.org)](https://wordpress.org/plugins/roxyapi/)
 
 The data layer for insight, belief, and prediction products.
 
-RoxyAPI is the only multi-domain spiritual intelligence API. 130+ production endpoints across 10 domains behind one API key, with remote MCP servers per product, verified astronomy, and clean commercial licensing. Think of it as the Stripe of insight APIs: AI-native infrastructure for astrology, tarot, numerology, and prediction apps so builders can ship in days instead of months.
+RoxyAPI is the only multi-domain spiritual intelligence API. 140+ production endpoints across 12 genuinely distinct domains behind one API key, with remote MCP servers per product, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs: AI-native infrastructure for astrology, tarot, numerology, and prediction apps so builders can ship in days instead of months.
 
 Every calculation is rigorously verified against authoritative sources. The proof is public, the breadth is one key, the licensing is clean.
 
@@ -32,6 +32,8 @@ One subscription gives builders production-ready access to every major spiritual
 - **Vedic and KP astrology**: kundli, detailed panchang (rahu kaal, abhijit muhurta, brahma muhurta, choghadiya, hora), Vimshottari dasha (current period and full 120-year timeline), dosha analysis (Manglik, Kaal Sarp, Sade Sati), navamsa, 36-point Ashtakoota Guna Milan compatibility, plus KP sub-lord, sub-sub-lord, and ruling-planet horary. KP is the sharpest technical differentiator versus generic Vedic providers.
 - **Numerology**: Life Path, full chart, compatibility, personal year, expression. Pythagorean reduction with master-number (11, 22, 33) and karmic-debt detection.
 - **Tarot**: daily card, three-card spread, Celtic Cross, yes-no, love spread, custom draws. Deterministic seeded draws for once-per-day behavior.
+- **Human Design**: full bodygraph (type, strategy, inner authority, profile, definition), defined and open centers, channels, gates, current transit overlay, and two-person connection (composite) charts.
+- **Forecast**: cross-domain predictive timelines, transit windows, and significant-date detection across Western, Vedic, and biorhythm signals for any date range.
 - **Biorhythm**: daily, multi-day forecast, compatibility, critical-day alerts. 10 cycle types.
 - **I Ching**: 64-hexagram catalog, daily hexagram, three-coin cast with changing lines and resulting hexagram.
 - **Crystals**: by zodiac, by chakra, birthstone, free-text search.
@@ -39,7 +41,7 @@ One subscription gives builders production-ready access to every major spiritual
 - **Angel numbers**: by exact number, universal lookup with digit-root fallback, daily.
 - **Location and timezone resolution** for accurate birth-data inputs (call this first when any chart endpoint needs coordinates).
 
-Every endpoint returns structured JSON, ships rich field descriptions for tool-calling agents, and is callable from REST, the official SDKs, or remote MCP.
+Every endpoint returns structured JSON, ships rich field descriptions for tool-calling agents, and is callable from REST, the official SDKs, or remote MCP. Translated interpretations are available in 8 languages via the `?lang=` parameter.
 
 ## Quick links
 
@@ -61,9 +63,11 @@ Every endpoint returns structured JSON, ships rich field descriptions for tool-c
 | TypeScript | `@roxyapi/sdk` | [RoxyAPI/sdk-typescript](https://github.com/RoxyAPI/sdk-typescript) |
 | Python | `roxy-sdk` | [RoxyAPI/sdk-python](https://github.com/RoxyAPI/sdk-python) |
 | PHP | `roxyapi/sdk` | [RoxyAPI/sdk-php](https://github.com/RoxyAPI/sdk-php) |
-| WordPress plugin | RoxyAPI for WordPress | [RoxyAPI/sdk-wordpress](https://github.com/RoxyAPI/sdk-wordpress) |
+| WordPress plugin | [Live on WordPress.org](https://wordpress.org/plugins/roxyapi/) | [RoxyAPI/sdk-wordpress](https://github.com/RoxyAPI/sdk-wordpress) |
 
 All three code SDKs are auto-generated from the OpenAPI specification, so new endpoints land in your IDE the day they ship. Each SDK ships an AGENTS.md so AI coding assistants in Cursor, Claude Code, Copilot, and Windsurf know how to call RoxyAPI without prompt-engineering.
+
+The WordPress plugin is live on WordPress.org for no-code installs: drop a shortcode, no code required. Drop-in UI components that render natal wheels, kundli, panchang, tarot, numerology, and biorhythm from the API response ship as [`@roxyapi/ui`](https://www.npmjs.com/package/@roxyapi/ui).
 
 ## MCP servers
 
@@ -75,6 +79,8 @@ RoxyAPI was MCP-first from day one. Every product domain ships its own remote St
 | Vedic and KP astrology | `https://roxyapi.com/mcp/vedic-astrology` |
 | Numerology | `https://roxyapi.com/mcp/numerology` |
 | Tarot | `https://roxyapi.com/mcp/tarot` |
+| Human Design | `https://roxyapi.com/mcp/human-design` |
+| Forecast | `https://roxyapi.com/mcp/forecast` |
 | Biorhythm | `https://roxyapi.com/mcp/biorhythm` |
 | I Ching | `https://roxyapi.com/mcp/iching` |
 | Crystals | `https://roxyapi.com/mcp/crystals` |
