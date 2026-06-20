@@ -16,6 +16,7 @@
 [![npm](https://img.shields.io/npm/v/@roxyapi/sdk?style=flat-square&logo=npm&label=%40roxyapi%2Fsdk)](https://www.npmjs.com/package/@roxyapi/sdk)
 [![PyPI](https://img.shields.io/pypi/v/roxy-sdk?style=flat-square&logo=pypi&logoColor=white&label=roxy-sdk)](https://pypi.org/project/roxy-sdk/)
 [![Packagist](https://img.shields.io/packagist/v/roxyapi/sdk?style=flat-square&logo=packagist&logoColor=white&label=roxyapi%2Fsdk)](https://packagist.org/packages/roxyapi/sdk)
+[![NuGet](https://img.shields.io/nuget/v/RoxyApi.Sdk?style=flat-square&logo=nuget&logoColor=white&label=RoxyApi.Sdk)](https://www.nuget.org/packages/RoxyApi.Sdk)
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/v/roxyapi?style=flat-square&logo=wordpress&logoColor=white&label=wordpress.org)](https://wordpress.org/plugins/roxyapi/)
 
 The data layer for insight, belief, and prediction products.
@@ -63,15 +64,34 @@ Every endpoint returns structured JSON, ships rich field descriptions for tool-c
 | TypeScript | `@roxyapi/sdk` | [RoxyAPI/sdk-typescript](https://github.com/RoxyAPI/sdk-typescript) |
 | Python | `roxy-sdk` | [RoxyAPI/sdk-python](https://github.com/RoxyAPI/sdk-python) |
 | PHP | `roxyapi/sdk` | [RoxyAPI/sdk-php](https://github.com/RoxyAPI/sdk-php) |
+| C# and .NET | `RoxyApi.Sdk` | [RoxyAPI/sdk-dotnet](https://github.com/RoxyAPI/sdk-dotnet) |
 | WordPress plugin | [Live on WordPress.org](https://wordpress.org/plugins/roxyapi/) | [RoxyAPI/sdk-wordpress](https://github.com/RoxyAPI/sdk-wordpress) |
 
-All three code SDKs are auto-generated from the OpenAPI specification, so new endpoints land in your IDE the day they ship. Each SDK ships an AGENTS.md so AI coding assistants in Cursor, Claude Code, Copilot, and Windsurf know how to call RoxyAPI without prompt-engineering.
+All four code SDKs are auto-generated from the OpenAPI specification, so new endpoints land in your IDE the day they ship. The C# and .NET package targets net8.0 and netstandard2.0, so it runs on modern .NET, ASP.NET Core, Blazor, MAUI, and Unity. Each SDK ships an AGENTS.md so AI coding assistants in Cursor, Claude Code, Copilot, and Windsurf know how to call RoxyAPI without prompt-engineering.
 
 The WordPress plugin is live on WordPress.org for no-code installs: drop a shortcode, no code required. Drop-in UI components that render natal wheels, kundli, panchang, tarot, numerology, and biorhythm from the API response ship as [`@roxyapi/ui`](https://www.npmjs.com/package/@roxyapi/ui).
 
 ## MCP servers
 
-RoxyAPI was MCP-first from day one. Every product domain ships its own remote Streamable HTTP MCP server. No local processes, no stdio wrappers, no self-hosting. Point Claude Desktop, Cursor, VS Code, Windsurf, or any MCP-compatible client at the URL and it is running in seconds.
+RoxyAPI was MCP-first from day one, and ships two kinds of remote Streamable HTTP MCP server for two different jobs. No local processes, no stdio wrappers, no self-hosting. Point a client at a URL and it is running in seconds.
+
+### Docs server, for coding agents
+
+The Docs server at `https://roxyapi.com/mcp/docs` exposes one tool, `search_docs`, over the entire RoxyAPI reference: every endpoint, parameter, SDK call, and guide. It is public, needs no API key, and returns documentation only, never live calculations. This is the server to give an AI coding assistant such as GitHub Copilot, Claude Code, or Cursor. Connect it while you build and the agent wires the whole RoxyAPI stack into your app, with the right field names the first time, in under 30 minutes.
+
+```json
+{
+  "mcpServers": {
+    "roxy-docs": {
+      "url": "https://roxyapi.com/mcp/docs"
+    }
+  }
+}
+```
+
+### Domain servers, for runtime agents
+
+Each product domain ships its own MCP server that performs real, billable calculations. These are for the agents and automations your users actually interact with: n8n and Make workflows, ChatGPT and Dify agents, Telegram, WhatsApp, and Slack bots, and any custom agent framework. One API key unlocks every domain.
 
 | Domain | MCP endpoint |
 |---|---|
@@ -87,6 +107,8 @@ RoxyAPI was MCP-first from day one. Every product domain ships its own remote St
 | Dreams | `https://roxyapi.com/mcp/dreams` |
 | Angel numbers | `https://roxyapi.com/mcp/angel-numbers` |
 | Location and timezone | `https://roxyapi.com/mcp/location` |
+
+Add your API key via the `X-API-Key` header on the domain servers. Rule of thumb: a coding agent wants the Docs server to write the integration, a runtime agent wants a domain server to compute a real chart.
 
 The flagship multi-MCP reference integration is [RoxyAPI/astrology-ai-chatbot](https://github.com/RoxyAPI/astrology-ai-chatbot), an MIT-licensed chatbot starter that wires multiple RoxyAPI MCP servers into a single conversational agent.
 
