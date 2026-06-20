@@ -91,7 +91,7 @@ The Docs server at `https://roxyapi.com/mcp/docs` exposes one tool, `search_docs
 
 ### Domain servers, for runtime agents
 
-Each product domain ships its own MCP server that performs real, billable calculations. These are for the agents and automations your users actually interact with: n8n and Make workflows, ChatGPT and Dify agents, Telegram, WhatsApp, and Slack bots, and any custom agent framework. One API key unlocks every domain.
+Each product domain ships its own MCP server that performs real, billable calculations. These are for the runtime agents and automations your users actually interact with: ChatGPT, Claude Desktop, and Gemini, workflow tools like n8n, Make, and Zapier, agent platforms like Dify and CrewAI, and Telegram, WhatsApp, and Slack bots. One API key unlocks every domain.
 
 | Domain | MCP endpoint |
 |---|---|
