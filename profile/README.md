@@ -21,7 +21,7 @@
 
 The data layer for insight, belief, and prediction products.
 
-RoxyAPI is the only multi-domain spiritual intelligence API. 140+ production endpoints across 12 genuinely distinct domains behind one API key, with remote MCP servers per product, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs: AI-native infrastructure for astrology, tarot, numerology, and prediction apps so builders can ship in days instead of months.
+RoxyAPI is the only multi-domain spiritual intelligence API. 160+ production endpoints across 12+ genuinely distinct domains behind one API key, with remote MCP servers per product, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs: AI-native infrastructure for astrology, tarot, numerology, and prediction apps so builders can ship in days instead of months.
 
 Every calculation is rigorously verified against authoritative sources. The proof is public, the breadth is one key, the licensing is clean.
 
