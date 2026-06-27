@@ -17,5 +17,8 @@
 
 - TypeScript SDK: https://github.com/RoxyAPI/sdk-typescript
 - Python SDK: https://github.com/RoxyAPI/sdk-python
+- PHP SDK: https://github.com/RoxyAPI/sdk-php
+- C# and .NET SDK: https://github.com/RoxyAPI/sdk-dotnet
+- Go SDK: https://github.com/RoxyAPI/sdk-go
 - WordPress plugin: https://github.com/RoxyAPI/sdk-wordpress
 - Starter templates: https://roxyapi.com/starters

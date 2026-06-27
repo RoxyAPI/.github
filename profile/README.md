@@ -17,6 +17,7 @@
 [![PyPI](https://img.shields.io/pypi/v/roxy-sdk?style=flat-square&logo=pypi&logoColor=white&label=roxy-sdk)](https://pypi.org/project/roxy-sdk/)
 [![Packagist](https://img.shields.io/packagist/v/roxyapi/sdk?style=flat-square&logo=packagist&logoColor=white&label=roxyapi%2Fsdk)](https://packagist.org/packages/roxyapi/sdk)
 [![NuGet](https://img.shields.io/nuget/v/RoxyApi.Sdk?style=flat-square&logo=nuget&logoColor=white&label=RoxyApi.Sdk)](https://www.nuget.org/packages/RoxyApi.Sdk)
+[![Go module](https://img.shields.io/github/v/tag/RoxyAPI/sdk-go?style=flat-square&logo=go&logoColor=white&label=sdk-go)](https://pkg.go.dev/github.com/RoxyAPI/sdk-go)
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/v/roxyapi?style=flat-square&logo=wordpress&logoColor=white&label=wordpress.org)](https://wordpress.org/plugins/roxyapi/)
 
 The data layer for insight, belief, and prediction products.
@@ -65,9 +66,10 @@ Every endpoint returns structured JSON, ships rich field descriptions for tool-c
 | Python | `roxy-sdk` | [RoxyAPI/sdk-python](https://github.com/RoxyAPI/sdk-python) |
 | PHP | `roxyapi/sdk` | [RoxyAPI/sdk-php](https://github.com/RoxyAPI/sdk-php) |
 | C# and .NET | `RoxyApi.Sdk` | [RoxyAPI/sdk-dotnet](https://github.com/RoxyAPI/sdk-dotnet) |
+| Go | `github.com/RoxyAPI/sdk-go` | [RoxyAPI/sdk-go](https://github.com/RoxyAPI/sdk-go) |
 | WordPress plugin | [Live on WordPress.org](https://wordpress.org/plugins/roxyapi/) | [RoxyAPI/sdk-wordpress](https://github.com/RoxyAPI/sdk-wordpress) |
 
-All four code SDKs are auto-generated from the OpenAPI specification, so new endpoints land in your IDE the day they ship. The C# and .NET package targets net8.0 and netstandard2.0, so it runs on modern .NET, ASP.NET Core, Blazor, MAUI, and Unity. Each SDK ships an AGENTS.md so AI coding assistants in Cursor, Claude Code, Copilot, and Windsurf know how to call RoxyAPI without prompt-engineering.
+All five code SDKs stay in lockstep with the API, so new endpoints land in your IDE the day they ship. The C# and .NET package targets net8.0 and netstandard2.0, so it runs on modern .NET, ASP.NET Core, Blazor, MAUI, and Unity. The Go module installs with a single `go get github.com/RoxyAPI/sdk-go` and is built for cloud-native and serverless backends. Each SDK ships an AGENTS.md so AI coding assistants in Cursor, Claude Code, Copilot, and Windsurf know how to call RoxyAPI without prompt-engineering.
 
 The WordPress plugin is live on WordPress.org for no-code installs: drop a shortcode, no code required. Drop-in UI components that render natal wheels, kundli, panchang, tarot, numerology, and biorhythm from the API response ship as [`@roxyapi/ui`](https://www.npmjs.com/package/@roxyapi/ui).
 
