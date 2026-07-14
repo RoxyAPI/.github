@@ -20,6 +20,12 @@
 [![Go module](https://img.shields.io/github/v/tag/RoxyAPI/sdk-go?style=flat-square&logo=go&logoColor=white&label=sdk-go)](https://pkg.go.dev/github.com/RoxyAPI/sdk-go)
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/v/roxyapi?style=flat-square&logo=wordpress&logoColor=white&label=wordpress.org)](https://wordpress.org/plugins/roxyapi/)
 
+**Drop-in UI**
+
+[![@roxyapi/ui](https://img.shields.io/npm/v/@roxyapi/ui?style=flat-square&logo=webcomponentsdotorg&logoColor=white&label=%40roxyapi%2Fui)](https://www.npmjs.com/package/@roxyapi/ui)
+[![@roxyapi/ui-react](https://img.shields.io/npm/v/@roxyapi/ui-react?style=flat-square&logo=react&logoColor=white&label=%40roxyapi%2Fui-react)](https://www.npmjs.com/package/@roxyapi/ui-react)
+[![@roxyapi/ui-vue](https://img.shields.io/npm/v/@roxyapi/ui-vue?style=flat-square&logo=vuedotjs&logoColor=white&label=%40roxyapi%2Fui-vue)](https://www.npmjs.com/package/@roxyapi/ui-vue)
+
 The data layer for insight, belief, and prediction products.
 
 RoxyAPI is the only multi-domain spiritual intelligence API. 160+ production endpoints across 12+ genuinely distinct domains behind one API key, with remote MCP servers per product, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs: AI-native infrastructure for astrology, tarot, numerology, and prediction apps so builders can ship in days instead of months.
@@ -71,7 +77,19 @@ Every endpoint returns structured JSON, ships rich field descriptions for tool-c
 
 All five code SDKs stay in lockstep with the API, so new endpoints land in your IDE the day they ship. The C# and .NET package targets net8.0 and netstandard2.0, so it runs on modern .NET, ASP.NET Core, Blazor, MAUI, and Unity. The Go module installs with a single `go get github.com/RoxyAPI/sdk-go` and is built for cloud-native and serverless backends. Each SDK ships an AGENTS.md so AI coding assistants in Cursor, Claude Code, Copilot, and Windsurf know how to call RoxyAPI without prompt-engineering.
 
-The WordPress plugin is live on WordPress.org for no-code installs: drop a shortcode, no code required. Drop-in UI components that render natal wheels, kundli, panchang, tarot, numerology, and biorhythm from the API response ship as [`@roxyapi/ui`](https://www.npmjs.com/package/@roxyapi/ui).
+The WordPress plugin is live on WordPress.org for no-code installs: drop a shortcode, no code required.
+
+## Drop-in UI components
+
+Roxy UI renders the API response for you: natal wheels, kundli, panchang, tarot spreads, numerology charts, Human Design bodygraphs, and biorhythm curves, themed with `--roxy-*` CSS custom properties and typed from the OpenAPI spec. Pass the SDK response straight into `data`, with no field renames and no glue code. Install exactly one package for your framework.
+
+| Framework | Package |
+|---|---|
+| Web components, any framework or none | [`@roxyapi/ui`](https://www.npmjs.com/package/@roxyapi/ui) |
+| React and Next.js | [`@roxyapi/ui-react`](https://www.npmjs.com/package/@roxyapi/ui-react) |
+| Vue and Nuxt | [`@roxyapi/ui-vue`](https://www.npmjs.com/package/@roxyapi/ui-vue) |
+
+Live component gallery and theming reference: [roxyapi.com/ui](https://roxyapi.com/ui).
 
 ## MCP servers
 
@@ -130,12 +148,14 @@ Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the m
 
 ## Starter templates
 
-Open-source starters that wrap RoxyAPI into a working app you can fork and ship:
+Open-source templates, all MIT, that wrap RoxyAPI into a working app you can fork, rebrand, and ship:
 
+- [spiritual-practitioner-website-template](https://github.com/RoxyAPI/spiritual-practitioner-website-template): a complete white-label website for a working astrologer, tarot reader, or numerologist. Free readings on your own domain, bookings, blog, prices, four palettes. Edit one config file, deploy, done. The self-hosted alternative to renting a page builder.
 - [astrology-ai-chatbot](https://github.com/RoxyAPI/astrology-ai-chatbot): flagship multi-MCP astrology assistant
+- [spiritual-ai-voice-assistant](https://github.com/RoxyAPI/spiritual-ai-voice-assistant): voice-driven spiritual assistant with an embeddable widget
 - [astrology-starter-app](https://github.com/RoxyAPI/astrology-starter-app): Western astrology baseline
 - [vedic-astrology-starter-app](https://github.com/RoxyAPI/vedic-astrology-starter-app): Vedic and KP focused
-- [jyotish-vedic-astrology-app](https://github.com/RoxyAPI/jyotish-vedic-astrology-app): Indian-market Jyotish app with Kundli, Panchang, Gun Milan, Dasha
+- [jyotish-vedic-astrology-app](https://github.com/RoxyAPI/jyotish-vedic-astrology-app): Jyotish app with Kundli, Panchang, Gun Milan, Dasha, built on the drop-in UI components
 - [numerology-starter-app](https://github.com/RoxyAPI/numerology-starter-app): Life Path, master numbers, karmic debt
 - [tarot-starter-app](https://github.com/RoxyAPI/tarot-starter-app): tarot reader with seeded draws
 - [dreams-starter-app](https://github.com/RoxyAPI/dreams-starter-app): dream journal with interpretation

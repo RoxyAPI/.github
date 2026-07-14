@@ -12,8 +12,9 @@
 | Account, billing, or pricing | https://roxyapi.com/contact |
 | Bug reports | Open an issue using the bug template in any repo |
 | Feature requests | Open an issue using the feature template |
+| Security vulnerability | https://roxyapi.com/contact?subject=security Never a public issue. See [SECURITY.md](../SECURITY.md) |
 
-## SDKs and starters
+## SDKs
 
 - TypeScript SDK: https://github.com/RoxyAPI/sdk-typescript
 - Python SDK: https://github.com/RoxyAPI/sdk-python
@@ -21,4 +22,15 @@
 - C# and .NET SDK: https://github.com/RoxyAPI/sdk-dotnet
 - Go SDK: https://github.com/RoxyAPI/sdk-go
 - WordPress plugin: https://github.com/RoxyAPI/sdk-wordpress
-- Starter templates: https://roxyapi.com/starters
+
+## Drop-in UI components
+
+Install one for your framework. Gallery and theming: https://roxyapi.com/ui
+
+- Any framework or none: `@roxyapi/ui`
+- React and Next.js: `@roxyapi/ui-react`
+- Vue and Nuxt: `@roxyapi/ui-vue`
+
+## Starter templates
+
+https://roxyapi.com/starters
