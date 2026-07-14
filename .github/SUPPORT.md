@@ -23,7 +23,7 @@
 - Go SDK: https://github.com/RoxyAPI/sdk-go
 - WordPress plugin: https://github.com/RoxyAPI/sdk-wordpress
 
-## Drop-in UI components
+## UI Components
 
 Install one for your framework. Gallery and theming: https://roxyapi.com/ui
 

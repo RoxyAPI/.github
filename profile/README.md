@@ -20,7 +20,7 @@
 [![Go module](https://img.shields.io/github/v/tag/RoxyAPI/sdk-go?style=flat-square&logo=go&logoColor=white&label=sdk-go)](https://pkg.go.dev/github.com/RoxyAPI/sdk-go)
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/v/roxyapi?style=flat-square&logo=wordpress&logoColor=white&label=wordpress.org)](https://wordpress.org/plugins/roxyapi/)
 
-**Drop-in UI**
+**UI Components**
 
 [![@roxyapi/ui](https://img.shields.io/npm/v/@roxyapi/ui?style=flat-square&logo=webcomponentsdotorg&logoColor=white&label=%40roxyapi%2Fui)](https://www.npmjs.com/package/@roxyapi/ui)
 [![@roxyapi/ui-react](https://img.shields.io/npm/v/@roxyapi/ui-react?style=flat-square&logo=react&logoColor=white&label=%40roxyapi%2Fui-react)](https://www.npmjs.com/package/@roxyapi/ui-react)
@@ -79,7 +79,7 @@ All five code SDKs stay in lockstep with the API, so new endpoints land in your 
 
 The WordPress plugin is live on WordPress.org for no-code installs: drop a shortcode, no code required.
 
-## Drop-in UI components
+## UI Components
 
 Roxy UI renders the API response for you: natal wheels, kundli, panchang, tarot spreads, numerology charts, Human Design bodygraphs, and biorhythm curves, themed with `--roxy-*` CSS custom properties and typed from the OpenAPI spec. Pass the SDK response straight into `data`, with no field renames and no glue code. Install exactly one package for your framework.
 
