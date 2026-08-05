@@ -9,6 +9,9 @@
 | MCP setup for AI agents | https://roxyapi.com/docs/mcp |
 | Methodology and accuracy | https://roxyapi.com/methodology |
 | Open accuracy benchmark | https://github.com/RoxyAPI/astrology-api-benchmark |
+| No-code widgets and embeds | https://roxyapi.com/widgets |
+| Licensing and commercial use | https://roxyapi.com/policy/license |
+| Data protection, DPA, and subprocessors | https://roxyapi.com/policy/dpa |
 | Account, billing, or pricing | https://roxyapi.com/contact |
 | Bug reports | Open an issue using the bug template in any repo |
 | Feature requests | Open an issue using the feature template |
