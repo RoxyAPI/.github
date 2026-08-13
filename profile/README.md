@@ -29,7 +29,7 @@
 
 The data layer for insight, belief, and prediction products.
 
-RoxyAPI is the only multi-domain spiritual intelligence API. 175+ production endpoints across 12+ genuinely distinct domains behind one API key, with a Remote MCP server per domain, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs, the Spiritual OS layer your app and your agents plug into, so builders ship in days instead of months.
+RoxyAPI is the only multi-domain spiritual intelligence API. 177+ production endpoints across 12+ genuinely distinct domains behind one API key, with a Remote MCP server per domain, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs, the Spiritual OS layer your app and your agents plug into, so builders ship in days instead of months.
 
 Every calculation is verified against authoritative sources, and the proof is public and re-runnable by you. Clone the benchmark, point it at us, point it at anyone else.
 
@@ -38,8 +38,8 @@ Every calculation is verified against authoritative sources, and the proof is pu
 | | |
 |---|---|
 | Domains under one key | 12+, each a genuinely distinct system |
-| Production endpoints | 175+, one call returns a complete result |
-| Agent tools over Remote MCP | 173+, one tool per calculation endpoint |
+| Production endpoints | 177+, one call returns a complete result |
+| Agent tools over Remote MCP | 174+, one tool per calculation endpoint |
 | Automated tests per deploy | 6,000+, including 1,200+ gold-standard tests pinned to named external references |
 | Open MIT benchmark | 210 planet positions across 21 birth charts, 210 of 210 within tolerance |
 | Median deviation from NASA JPL Horizons DE441 | 1.5 arcseconds, measured July 2026 by a benchmark you can re-run |
