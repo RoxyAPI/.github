@@ -29,7 +29,7 @@
 
 The data layer for insight, belief, and prediction products.
 
-RoxyAPI is the only multi-domain spiritual intelligence API. 177+ production endpoints across 12+ genuinely distinct domains behind one API key, with a Remote MCP server per domain, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs, the Spiritual OS layer your app and your agents plug into, so builders ship in days instead of months.
+RoxyAPI is the only multi-domain spiritual intelligence API. 209+ production endpoints across 14+ genuinely distinct domains behind one API key, with a Remote MCP server per domain, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs, the Spiritual OS layer your app and your agents plug into, so builders ship in days instead of months.
 
 Every calculation is verified against authoritative sources, and the proof is public and re-runnable by you. Clone the benchmark, point it at us, point it at anyone else.
 
@@ -37,13 +37,13 @@ Every calculation is verified against authoritative sources, and the proof is pu
 
 | | |
 |---|---|
-| Domains under one key | 12+, each a genuinely distinct system |
-| Production endpoints | 177+, one call returns a complete result |
-| Agent tools over Remote MCP | 174+, one tool per calculation endpoint |
-| Automated tests per deploy | 6,000+, including 1,200+ gold-standard tests pinned to named external references |
+| Domains under one key | 14+, each a genuinely distinct system |
+| Production endpoints | 209+, one call returns a complete result |
+| Agent tools over Remote MCP | 206+, one tool per calculation endpoint |
+| Automated tests per deploy | 8,800+, including 1,900+ gold-standard tests pinned to named external references |
 | Open MIT benchmark | 210 planet positions across 21 birth charts, 210 of 210 within tolerance |
 | Median deviation from NASA JPL Horizons DE441 | 1.5 arcseconds, measured July 2026 by a benchmark you can re-run |
-| Interpretation languages | 8+ via one query parameter, included in every plan |
+| Interpretation languages | 10+ via one query parameter, included in every plan |
 | Typed SDKs | 5 languages, plus a WordPress plugin live on WordPress.org |
 | Median response time | Under 50 ms |
 | Uptime | 100 percent measured over the last six months on an [independent status page](https://stats.uptimerobot.com/T0kPZKlAjf "Live RoxyAPI uptime on UptimeRobot, an independently hosted third party status page") we cannot edit, against a 99.95 percent SLA |
@@ -61,6 +61,8 @@ One subscription gives builders production-ready access to every major insight a
 - **Vedic and KP astrology**: kundli, detailed panchang (rahu kaal, abhijit muhurta, brahma muhurta, choghadiya, hora), Vimshottari dasha down to sookshma with the full 120-year timeline, dosha analysis (Manglik, Kaal Sarp, Sade Sati), navamsa and divisional charts, 36-point Ashtakoota Guna Milan compatibility, plus KP sub-lord, sub-sub-lord, cuspal, and ruling-planet horary. KP is the sharpest technical differentiator versus generic Vedic providers.
 - **Forecast**: cross-domain predictive timelines, transit windows, and significant-date detection across Western, Vedic, and biorhythm signals for any date range, in one request.
 - **Human Design**: full bodygraph (type, strategy, inner authority, profile, definition, incarnation cross), defined and open centers, channels, gates, Variables, Penta, current transit overlay, and two-person connection charts.
+- **Chinese astrology**: BaZi Four Pillars with hidden stems, Na Yin and Ten God relations, luck pillars, day master strength, Chinese zodiac and animal compatibility, and the lunisolar calendar with solar terms as astronomical instants. The school splits that make two calculators disagree are typed parameters, and every chart echoes the conventions it was computed under.
+- **Feng shui**: Xuan Kong flying star natal charts for all nine periods and 24 mountains, Kua numbers with the full Eight Mansions map, annual and monthly star plates, the four annual afflictions with exact degree spans, and the Bagua map. Chinese years resolve at Li Chun, computed astronomically.
 - **Numerology**: Life Path, full chart, compatibility, personal year, expression. Pythagorean reduction with master-number (11, 22, 33) and karmic-debt detection.
 - **Tarot**: daily card, three-card spread, Celtic Cross, yes-no, love spread, career spread, custom draws. Deterministic seeded draws for once-per-day behavior.
 - **Biorhythm**: daily, multi-day forecast, compatibility, critical-day alerts. 10 cycle types.
@@ -91,7 +93,7 @@ Category-level, no names. Run these checks against any vendor you are evaluating
 
 | Capability | RoxyAPI | Legacy astrology APIs | DIY open source libraries |
 |---|---|---|---|
-| Domains under one key and one subscription | Yes, 12+ | No, priced per product | No, one library each |
+| Domains under one key and one subscription | Yes, 14+ | No, priced per product | No, one library each |
 | One call returns a complete result | Yes | Often split across separately billed calls | Assembly required |
 | Flat request pricing, 1 request equals 1 unit on REST and MCP alike | Yes | Varies, credit tables weight endpoints | Yes, self hosted |
 | New domains land inside the existing plan | Yes, at no extra cost | No, new invoice | No, new build |
@@ -140,6 +142,8 @@ Each product domain ships its own MCP server that performs real calculations. Th
 | Vedic and KP astrology | `https://roxyapi.com/mcp/vedic-astrology` |
 | Forecast | `https://roxyapi.com/mcp/forecast` |
 | Human Design | `https://roxyapi.com/mcp/human-design` |
+| Chinese astrology | `https://roxyapi.com/mcp/chinese-astrology` |
+| Feng shui | `https://roxyapi.com/mcp/feng-shui` |
 | Numerology | `https://roxyapi.com/mcp/numerology` |
 | Tarot | `https://roxyapi.com/mcp/tarot` |
 | Biorhythm | `https://roxyapi.com/mcp/biorhythm` |
@@ -195,7 +199,7 @@ Live component gallery and theming reference: [roxyapi.com/ui](https://roxyapi.c
 Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the moat, and publishes the evidence rather than asking to be trusted.
 
 - Powered by **Roxy Ephemeris**, built in house and verified against **NASA JPL Horizons DE441** as the physics ground truth.
-- **6,000+ automated tests run on every deploy**, including **1,200+ gold-standard tests** each pinned to a named external reference.
+- **8,800+ automated tests run on every deploy**, including **1,900+ gold-standard tests** each pinned to a named external reference.
 - **A public, MIT-licensed benchmark anyone can clone, run, or point at any astrology API**: [RoxyAPI/astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark: 210 planet positions across 21 charts verified against NASA JPL Horizons DE441"). 210 reference planet positions across 21 birth charts, 210 of 210 within tolerance, **median deviation 1.5 arcseconds** on the run published in July 2026. Every run keeps its predecessors alongside it, because a benchmark that silently replaces its numbers gives you no way to tell a real improvement from a quiet re-tune.
 - The worst single point in that run is named rather than hidden: 16.6 arcseconds on Neptune, the slowest body in the set. The Moon, which moves about 13 degrees a day and is therefore the direct test of whether timezone resolution is correct, stays inside 3.3 arcseconds.
 - **Published methodology** with the full test corpus, tolerance thresholds, reference sources, and verification tables: [roxyapi.com/methodology](https://roxyapi.com/methodology "RoxyAPI methodology: test corpus, tolerances, named reference sources, and verification tables").
@@ -267,7 +271,7 @@ Prefer a single working file over a tour of the docs? This org also publishes on
 ## Questions developers ask before integrating
 
 **Is RoxyAPI just an astrology API?**
-No. Astrology is one of 12+ distinct domains on the same key, alongside Vedic and KP astrology, forecast timelines, Human Design, numerology, tarot, biorhythm, I Ching, crystals, dream interpretation, angel numbers, and location and timezone resolution. Counting honestly means one system counts once, so the total reads smaller than a padded catalog and delivers more per call.
+No. Astrology is one of 14+ distinct domains on the same key, alongside Vedic and KP astrology, forecast timelines, Human Design, Chinese astrology, feng shui, numerology, tarot, biorhythm, I Ching, crystals, dream interpretation, angel numbers, and location and timezone resolution. Counting honestly means one system counts once, so the total reads smaller than a padded catalog and delivers more per call.
 
 **Should I just build this myself?**
 Recreating 70 percent of it is genuinely easy. Recreating it well is not, and the licensing fork comes first: the free path most package managers hand you is a copyleft wrapper, and copyleft triggers on network access. After that it is accuracy verification, ephemeris currency, historical daylight saving, house systems, cross-domain consistency, Remote MCP, and being on call. If you need exactly one domain and can self-host, a library is cheaper, and we say so.
