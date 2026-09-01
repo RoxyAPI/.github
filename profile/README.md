@@ -72,7 +72,7 @@ One subscription gives builders production-ready access to every major insight a
 - **Angel numbers**: by exact number, universal lookup with digit-root fallback, daily.
 - **Location and timezone resolution** for accurate birth-data inputs (call this first when any chart endpoint needs coordinates).
 
-Every endpoint returns structured JSON, ships rich field descriptions so tool-calling agents know when and how to call it, and is callable from REST, the official SDKs, or Remote MCP. Interpretations are localized in 8+ languages through one `?lang=` parameter, at no extra cost on any plan.
+Every endpoint returns structured JSON, ships rich field descriptions so tool-calling agents know when and how to call it, and is callable from REST, the official SDKs, or Remote MCP. Interpretations are localized in 10+ languages through one `?lang=` parameter, at no extra cost on any plan.
 
 ## Simple surface, advanced core
 
@@ -100,13 +100,13 @@ Category-level, no names. Run these checks against any vendor you are evaluating
 | Remote MCP server per domain, hosted, no local process | Yes | Varies, local stdio wrappers | No, build your own |
 | Token-optimized agent responses | Yes, opt-in and lossless | Not offered | Not offered |
 | Bring your own LLM, no per-token markup, no hidden system prompt | Yes | Varies, markups and locked prompts | Yes |
-| Automated tests published per deploy | Yes, 6,000+ with 1,200+ gold-standard | Not published | Varies, yours to write |
+| Automated tests published per deploy | Yes, 8,800+ with 1,900+ gold-standard | Not published | Varies, yours to write |
 | Open benchmark anyone can clone and re-run against any provider | Yes, MIT licensed | No public artifact | Run it yourself |
 | Real production responses before you pay | Yes, no signup | Varies, signup or sandbox | Install first |
 | Uptime reported by an independent third party | Yes | Varies, self reported | No, yours to run |
 | Typed SDKs generated from a live spec that cannot drift | Yes, 5 languages | Varies, fewer languages, hand-kept exports | No, read the source |
 | Drop-in UI components and no-code embeddable widgets | Yes | No | No |
-| Full editorial interpretation text localized in 8+ languages | Yes, publish ready | Varies, daily horoscopes mostly | No, numbers only |
+| Full editorial interpretation text localized in 10+ languages | Yes, publish ready | Varies, daily horoscopes mostly | No, numbers only |
 | Engine free of AGPL copyleft exposure | Yes, none | Varies, inherited from a copyleft wrapper | No, copyleft is common |
 | Commercial license on every plan, no source disclosure | Yes | Varies, enterprise or on request | No, copyleft terms |
 | EU data residency with an Article 28 DPA on every plan | Yes, Germany, all plans | Varies, enterprise or on request | Yours to write |
@@ -209,7 +209,7 @@ Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the m
 
 - **No AGPL, no copyleft, no source disclosure.** The engine is built in house, not a wrapper over a 1990s AGPL desktop library, so nothing copyleft reaches your product. AGPL matters more than teams expect because its copyleft triggers on network access, and an API is a network service, which is why [Google bans AGPL dependencies company-wide](https://opensource.google/documentation/reference/using/agpl-policy "Google open source policy: AGPL licensed code may not be used at Google, the third party corroboration for why AGPL free matters"). The exposure most teams carry was never a decision. A package manager hands you the free path, so a team installs a copyleft wrapper, ships a network service, and inherits the obligation without reading it. That licence is a private contract with no public registry, so ask any provider for their position in writing, including us. Ours is published at [roxyapi.com/policy/license](https://roxyapi.com/policy/license "RoxyAPI commercial license: no AGPL, no copyleft, no per user royalties, full commercial terms on every plan").
 - **A commercial license on every plan.** Build and sell closed-source apps, keep your code private, ship to any app store, white label for clients, and pass the license audits that funding rounds and acquisitions run.
-- **Stateless by design.** No birth data, journals, or profiles are retained. Birth data that can qualify as GDPR Article 9 special category data is computed in memory and never lands in a database, so there is no store to breach and nothing to export or erase when a data subject request arrives. End user data stays in your stack, and the memory and personalization layer stays 100 percent yours.
+- **Stateless by design.** No birth data, journals, or profiles are retained. Birth data that can qualify as GDPR Article 9 special category data is computed in memory and never lands in a database, so there is no store to breach and nothing to export or erase when a data subject request arrives. End user data stays in your stack, and the memory and personalization layer stays 100 percent yours. The MIT [ai-spiritual-companion](https://github.com/RoxyAPI/ai-spiritual-companion "MIT AI companion template with a cached natal chart, reading history, and pgvector semantic recall on the operator's own Supabase") template ships that layer ready to fork, on a database the operator owns.
 - **EU data residency and an Article 28 DPA on every plan.** Stored data stays in Germany, inside the EU, for every customer on every plan, so EU residency is the default rather than a regional upgrade. The processor contract, EU Standard Contractual Clauses, technical and organisational measures, a dated subprocessor register, and breach notification terms are all published, so procurement can review them without contacting us: [roxyapi.com/policy/dpa](https://roxyapi.com/policy/dpa "RoxyAPI self serve GDPR Article 28 Data Processing Addendum with EU Standard Contractual Clauses, technical and organisational measures, and a dated subprocessor register").
 - **MIT everywhere it is ours to give.** The SDKs, the UI component library, the templates, and the benchmark are all MIT licensed, with no attribution requirement and no upstream lock-in.
 
@@ -233,6 +233,7 @@ RoxyAPI is an independently operated, early-stage platform, and does not claim t
 Open-source templates, all MIT licensed, that wrap RoxyAPI into a working app you can fork, rebrand, and ship as your own product:
 
 - [astrology-ai-chatbot](https://github.com/RoxyAPI/astrology-ai-chatbot): flagship multi-MCP AI astrology assistant. Auto-discovers the tool catalog over Remote MCP, multi-LLM, deploys in under 30 minutes.
+- [ai-spiritual-companion](https://github.com/RoxyAPI/ai-spiritual-companion): AI companion with persistent per-user memory. Supabase accounts, a natal chart cached exactly once per user, full reading history, and pgvector semantic recall, grounded over Remote MCP with compact responses. The memory layer lives in the operator stack, which makes it the natural premium feature to build plans on.
 - [spiritual-practitioner-website-template](https://github.com/RoxyAPI/spiritual-practitioner-website-template): a complete white-label website for a working astrologer, tarot reader, or numerologist. Free readings on your own domain, bookings, blog, prices, four palettes. Edit one config file, deploy, done. The self-hosted alternative to renting a page builder.
 - [spiritual-ai-voice-assistant](https://github.com/RoxyAPI/spiritual-ai-voice-assistant): voice-driven spiritual assistant with an embeddable widget
 - [jyotish-vedic-astrology-app](https://github.com/RoxyAPI/jyotish-vedic-astrology-app): Jyotish web app with kundli, panchang, Gun Milan, and dasha, built on the drop-in UI components
@@ -283,7 +284,7 @@ No. RoxyAPI runs Roxy Ephemeris, an in-house engine verified against NASA JPL Ho
 Do not take our word for it. Clone the [MIT benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "Reproducible MIT licensed accuracy benchmark for any astrology API, verified against NASA JPL Horizons DE441"), run it against RoxyAPI, then run it against any other provider. It checks 210 planet positions across 21 birth charts against NASA JPL Horizons DE441 and prints the deviations. The methodology page publishes the corpus, the tolerances, and the reference sources behind every domain.
 
 **What does it cost to add a domain?**
-Nothing. Every plan includes every domain, every endpoint, Remote MCP, the SDKs, the UI components, the widgets, and the 8+ interpretation languages. One request equals one quota unit whether it arrives over REST or MCP, with no credit weighting and no premium endpoint surcharges, and new domains join the plan you already have.
+Nothing. Every plan includes every domain, every endpoint, Remote MCP, the SDKs, the UI components, the widgets, and the 10+ interpretation languages. One request equals one quota unit whether it arrives over REST or MCP, with no credit weighting and no premium endpoint surcharges, and new domains join the plan you already have.
 
 **Can I use it in a closed-source commercial product?**
 Yes. Every plan is a commercial license with no copyleft and no per-user royalties, so you can keep your source private, ship to any app store, and white label for clients. The MIT templates and UI components can be cloned and shipped under your own brand.
