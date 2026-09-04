@@ -38,7 +38,7 @@ Every calculation is verified against authoritative sources, and the proof is pu
 | | |
 |---|---|
 | Domains under one key | 18+, each a genuinely distinct system |
-| Production endpoints | 209+, one call returns a complete result |
+| Production endpoints | 258+, one call returns a complete result |
 | Agent tools over Remote MCP | 206+, one tool per calculation endpoint |
 | Automated tests per deploy | 8,800+, including 1,900+ gold-standard tests pinned to named external references |
 | Open MIT benchmark | 210 planet positions across 21 birth charts, 210 of 210 within tolerance |
