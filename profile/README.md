@@ -29,7 +29,7 @@
 
 The data layer for insight, belief, and prediction products.
 
-RoxyAPI is the only multi-domain spiritual intelligence API. 209+ production endpoints across 14+ genuinely distinct domains behind one API key, with a Remote MCP server per domain, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs, the Spiritual OS layer your app and your agents plug into, so builders ship in days instead of months.
+RoxyAPI is the only multi-domain spiritual intelligence API. 258+ production endpoints across 18+ genuinely distinct domains behind one API key, with a Remote MCP server per domain, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs, the Spiritual OS layer your app and your agents plug into, so builders ship in days instead of months.
 
 Every calculation is verified against authoritative sources, and the proof is public and re-runnable by you. Clone the benchmark, point it at us, point it at anyone else.
 
@@ -37,7 +37,7 @@ Every calculation is verified against authoritative sources, and the proof is pu
 
 | | |
 |---|---|
-| Domains under one key | 14+, each a genuinely distinct system |
+| Domains under one key | 18+, each a genuinely distinct system |
 | Production endpoints | 209+, one call returns a complete result |
 | Agent tools over Remote MCP | 206+, one tool per calculation endpoint |
 | Automated tests per deploy | 8,800+, including 1,900+ gold-standard tests pinned to named external references |
@@ -93,7 +93,7 @@ Category-level, no names. Run these checks against any vendor you are evaluating
 
 | Capability | RoxyAPI | Legacy astrology APIs | DIY open source libraries |
 |---|---|---|---|
-| Domains under one key and one subscription | Yes, 14+ | No, priced per product | No, one library each |
+| Domains under one key and one subscription | Yes, 18+ | No, priced per product | No, one library each |
 | One call returns a complete result | Yes | Often split across separately billed calls | Assembly required |
 | Flat request pricing, 1 request equals 1 unit on REST and MCP alike | Yes | Varies, credit tables weight endpoints | Yes, self hosted |
 | New domains land inside the existing plan | Yes, at no extra cost | No, new invoice | No, new build |
@@ -144,9 +144,13 @@ Each product domain ships its own MCP server that performs real calculations. Th
 | Human Design | `https://roxyapi.com/mcp/human-design` |
 | Chinese astrology | `https://roxyapi.com/mcp/chinese-astrology` |
 | Feng shui | `https://roxyapi.com/mcp/feng-shui` |
+| Mesoamerican astrology | `https://roxyapi.com/mcp/mesoamerican-astrology` |
+| Vastu | `https://roxyapi.com/mcp/vastu` |
 | Numerology | `https://roxyapi.com/mcp/numerology` |
+| Kabbalah | `https://roxyapi.com/mcp/kabbalah` |
 | Tarot | `https://roxyapi.com/mcp/tarot` |
 | Biorhythm | `https://roxyapi.com/mcp/biorhythm` |
+| Ayurveda | `https://roxyapi.com/mcp/ayurveda` |
 | I Ching | `https://roxyapi.com/mcp/iching` |
 | Crystals | `https://roxyapi.com/mcp/crystals` |
 | Dreams | `https://roxyapi.com/mcp/dreams` |
@@ -272,7 +276,7 @@ Prefer a single working file over a tour of the docs? This org also publishes on
 ## Questions developers ask before integrating
 
 **Is RoxyAPI just an astrology API?**
-No. Astrology is one of 14+ distinct domains on the same key, alongside Vedic and KP astrology, forecast timelines, Human Design, Chinese astrology, feng shui, numerology, tarot, biorhythm, I Ching, crystals, dream interpretation, angel numbers, and location and timezone resolution. Counting honestly means one system counts once, so the total reads smaller than a padded catalog and delivers more per call.
+No. Astrology is one of 18+ distinct domains on the same key, alongside Vedic and KP astrology, forecast timelines, Human Design, Chinese astrology, feng shui, Mesoamerican astrology, Vastu, numerology, Kabbalah, tarot, biorhythm, Ayurveda, I Ching, crystals, dream interpretation, angel numbers, and location and timezone resolution. Counting honestly means one system counts once, so the total reads smaller than a padded catalog and delivers more per call.
 
 **Should I just build this myself?**
 Recreating 70 percent of it is genuinely easy. Recreating it well is not, and the licensing fork comes first: the free path most package managers hand you is a copyleft wrapper, and copyleft triggers on network access. After that it is accuracy verification, ephemeris currency, historical daylight saving, house systems, cross-domain consistency, Remote MCP, and being on call. If you need exactly one domain and can self-host, a library is cheaper, and we say so.
