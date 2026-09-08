@@ -36,4 +36,4 @@ Install one for your framework. Gallery and theming: https://roxyapi.com/ui
 
 ## Starter templates
 
-https://roxyapi.com/starters
+https://roxyapi.com/templates
