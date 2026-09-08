@@ -8,7 +8,7 @@
 [![Methodology](https://img.shields.io/badge/Methodology-NASA_JPL_verified-fb923c?style=flat-square)](https://roxyapi.com/methodology)
 [![Benchmark](https://img.shields.io/badge/Benchmark-Open_%26_MIT-22c55e?style=flat-square&logo=github&logoColor=white)](https://github.com/RoxyAPI/astrology-api-benchmark)
 [![Pricing](https://img.shields.io/badge/Pricing-Plans_%26_quotas-0ea5e9?style=flat-square)](https://roxyapi.com/pricing)
-[![Templates](https://img.shields.io/badge/Templates-MIT_licensed-8b5cf6?style=flat-square)](https://roxyapi.com/starters)
+[![Templates](https://img.shields.io/badge/Templates-MIT_licensed-8b5cf6?style=flat-square)](https://roxyapi.com/templates)
 [![MCP](https://img.shields.io/badge/MCP-Remote_%26_no_setup-ec4899?style=flat-square)](https://roxyapi.com/docs/mcp)
 [![Widgets](https://img.shields.io/badge/Widgets-No_code_embeds-14b8a6?style=flat-square)](https://roxyapi.com/widgets)
 
@@ -255,7 +255,7 @@ Open-source templates, all MIT licensed, that wrap RoxyAPI into a working app yo
 - [tarot-starter-app](https://github.com/RoxyAPI/tarot-starter-app): tarot reader with seeded draws
 - [dreams-starter-app](https://github.com/RoxyAPI/dreams-starter-app): dream journal with interpretation
 
-Full gallery with screenshots and one-click deploys: [roxyapi.com/starters](https://roxyapi.com/starters "Free MIT licensed RoxyAPI templates: AI chatbot, practitioner website, Vedic kundli, numerology, tarot, and dream apps you can clone and white label").
+Full gallery with screenshots and one-click deploys: [roxyapi.com/templates](https://roxyapi.com/templates "Free MIT licensed RoxyAPI templates: AI chatbot, practitioner website, Vedic kundli, numerology, tarot, and dream apps you can clone and white label").
 
 ## Per-endpoint code samples
 
@@ -274,7 +274,7 @@ Prefer a single working file over a tour of the docs? This org also publishes on
 | Public benchmark (open, MIT) | https://github.com/RoxyAPI/astrology-api-benchmark |
 | UI component gallery | https://roxyapi.com/ui |
 | No-code widgets | https://roxyapi.com/widgets |
-| Free templates | https://roxyapi.com/starters |
+| Free templates | https://roxyapi.com/templates |
 | Commercial license | https://roxyapi.com/policy/license |
 | Data processing addendum | https://roxyapi.com/policy/dpa |
 | Changelog | https://roxyapi.com/changelog |
