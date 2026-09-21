@@ -27,9 +27,9 @@
 [![@roxyapi/ui-react](https://img.shields.io/npm/v/@roxyapi/ui-react?style=flat-square&logo=react&logoColor=white&label=%40roxyapi%2Fui-react)](https://www.npmjs.com/package/@roxyapi/ui-react)
 [![@roxyapi/ui-vue](https://img.shields.io/npm/v/@roxyapi/ui-vue?style=flat-square&logo=vuedotjs&logoColor=white&label=%40roxyapi%2Fui-vue)](https://www.npmjs.com/package/@roxyapi/ui-vue)
 
-The data layer for insight, belief, and prediction products.
+The Spiritual OS layer for agentic AI: the data behind insight, belief, and prediction products.
 
-RoxyAPI is the only multi-domain spiritual intelligence API. 258+ production endpoints across 18+ genuinely distinct domains behind one API key, with a Remote MCP server per domain, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs, the Spiritual OS layer your app and your agents plug into, so builders ship in days instead of months.
+RoxyAPI is the only multi-domain spiritual intelligence API. 261+ production endpoints across 18+ genuinely distinct domains behind one API key, with a Remote MCP server per domain, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs, the Spiritual OS layer your app and your agents plug into, so builders ship in days instead of months.
 
 Every calculation is verified against authoritative sources, and the proof is public and re-runnable by you. Clone the benchmark, point it at us, point it at anyone else.
 
@@ -38,9 +38,9 @@ Every calculation is verified against authoritative sources, and the proof is pu
 | | |
 |---|---|
 | Domains under one key | 18+, each a genuinely distinct system |
-| Production endpoints | 258+, one call returns a complete result |
-| Agent tools over Remote MCP | 255+, one tool per calculation endpoint |
-| Automated tests per deploy | 11,000+, including 2,800+ gold-standard tests pinned to named external references |
+| Production endpoints | 261+, one call returns a complete result |
+| Agent tools over Remote MCP | 258+, one tool per calculation endpoint |
+| Automated tests per deploy | 12,000+, including 2,900+ gold-standard tests pinned to named external references |
 | Open MIT benchmark | 210 planet positions across 21 birth charts, 210 of 210 within tolerance |
 | Median deviation from NASA JPL Horizons DE441 | 1.5 arcseconds, measured July 2026 by a benchmark you can re-run |
 | Interpretation languages | 10+ via one query parameter, included in every plan |
@@ -108,7 +108,7 @@ Category-level, no names. Run these checks against any vendor you are evaluating
 | Remote MCP server per domain, hosted, no local process | Yes | Varies, local stdio wrappers | No, build your own |
 | Token-optimized agent responses | Yes, opt-in and lossless | Not offered | Not offered |
 | Bring your own LLM, no per-token markup, no hidden system prompt | Yes | Varies, markups and locked prompts | Yes |
-| Automated tests published per deploy | Yes, 11,000+ with 2,800+ gold-standard | Not published | Varies, yours to write |
+| Automated tests published per deploy | Yes, 12,000+ with 2,900+ gold-standard | Not published | Varies, yours to write |
 | Open benchmark anyone can clone and re-run against any provider | Yes, MIT licensed | No public artifact | Run it yourself |
 | Real production responses before you pay | Yes, no signup | Varies, signup or sandbox | Install first |
 | Uptime reported by an independent third party | Yes | Varies, self reported | No, yours to run |
@@ -211,7 +211,7 @@ Live component gallery and theming reference: [roxyapi.com/ui](https://roxyapi.c
 Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the moat, and publishes the evidence rather than asking to be trusted.
 
 - Powered by **Roxy Ephemeris**, built in house and verified against **NASA JPL Horizons DE441** as the physics ground truth.
-- **11,000+ automated tests run on every deploy**, including **2,800+ gold-standard tests** each pinned to a named external reference.
+- **12,000+ automated tests run on every deploy**, including **2,900+ gold-standard tests** each pinned to a named external reference.
 - **A public, MIT-licensed benchmark anyone can clone, run, or point at any astrology API**: [RoxyAPI/astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark: 210 planet positions across 21 charts verified against NASA JPL Horizons DE441"). 210 reference planet positions across 21 birth charts, 210 of 210 within tolerance, **median deviation 1.5 arcseconds** on the run published in July 2026. Every run keeps its predecessors alongside it, because a benchmark that silently replaces its numbers gives you no way to tell a real improvement from a quiet re-tune.
 - The worst single point in that run is named rather than hidden: 16.6 arcseconds on Neptune, the slowest body in the set. The Moon, which moves about 13 degrees a day and is therefore the direct test of whether timezone resolution is correct, stays inside 3.3 arcseconds.
 - **Published methodology** with the full test corpus, tolerance thresholds, reference sources, and verification tables: [roxyapi.com/methodology](https://roxyapi.com/methodology "RoxyAPI methodology: test corpus, tolerances, named reference sources, and verification tables").
