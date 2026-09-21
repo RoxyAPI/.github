@@ -1,5 +1,5 @@
 <a href="https://roxyapi.com">
-  <img src="https://raw.githubusercontent.com/RoxyAPI/.github/main/profile/assets/hero.png" alt="RoxyAPI. The data layer for insight, belief, and prediction products. Astrology, Vedic astrology, forecast, human design, tarot, numerology, and more behind one API key." width="100%">
+  <img src="https://raw.githubusercontent.com/RoxyAPI/.github/main/profile/assets/hero.png" alt="RoxyAPI. The Spiritual OS layer for agentic AI. Insight products, shipped in days. One key, flat pricing." width="100%">
 </a>
 
 # RoxyAPI
