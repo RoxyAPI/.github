@@ -42,7 +42,7 @@ Every calculation is verified against authoritative sources, and the proof is pu
 | Agent tools over Remote MCP | 258+, one tool per calculation endpoint |
 | Automated tests per deploy | 12,000+, including 2,900+ gold-standard tests pinned to named external references |
 | Open MIT benchmark | 210 planet positions across 21 birth charts, 210 of 210 within tolerance |
-| Median deviation from NASA JPL Horizons DE441 | 1.5 arcseconds, measured July 2026 by a benchmark you can re-run |
+| Median deviation from NASA JPL Horizons DE441 | 1.5 arcseconds, measured September 2026 by a benchmark you can re-run |
 | Interpretation languages | 10+ via one query parameter, included in every plan |
 | Typed SDKs | 5 languages, plus a WordPress plugin live on WordPress.org |
 | Median response time | Under 50 ms |
@@ -212,8 +212,8 @@ Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the m
 
 - Powered by **Roxy Ephemeris**, built in house and verified against **NASA JPL Horizons DE441** as the physics ground truth.
 - **12,000+ automated tests run on every deploy**, including **2,900+ gold-standard tests** each pinned to a named external reference.
-- **A public, MIT-licensed benchmark anyone can clone, run, or point at any astrology API**: [RoxyAPI/astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark: 210 planet positions across 21 charts verified against NASA JPL Horizons DE441"). 210 reference planet positions across 21 birth charts, 210 of 210 within tolerance, **median deviation 1.5 arcseconds** on the run published in July 2026. Every run keeps its predecessors alongside it, because a benchmark that silently replaces its numbers gives you no way to tell a real improvement from a quiet re-tune.
-- The worst single point in that run is named rather than hidden: 16.6 arcseconds on Neptune, the slowest body in the set. The Moon, which moves about 13 degrees a day and is therefore the direct test of whether timezone resolution is correct, stays inside 3.3 arcseconds.
+- **A public, MIT-licensed benchmark anyone can clone, run, or point at any astrology API**: [RoxyAPI/astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark: 210 planet positions across 21 charts verified against NASA JPL Horizons DE441"). 210 reference planet positions across 21 birth charts, 210 of 210 within tolerance, **median deviation 1.5 arcseconds** on the run published in September 2026. Every run keeps its predecessors alongside it, because a benchmark that silently replaces its numbers gives you no way to tell a real improvement from a quiet re-tune.
+- The worst single point in that run is named rather than hidden: 16.7 arcseconds on Neptune, the slowest body in the set. The Moon, which moves about 13 degrees a day and is therefore the direct test of whether timezone resolution is correct, stays inside 3.3 arcseconds.
 - **Published methodology** with the full test corpus, tolerance thresholds, reference sources, and verification tables: [roxyapi.com/methodology](https://roxyapi.com/methodology "RoxyAPI methodology: test corpus, tolerances, named reference sources, and verification tables").
 - **Proof before you pay.** The playground at [roxyapi.com/api-reference](https://roxyapi.com/api-reference "RoxyAPI live playground returning real production responses from the typed OpenAPI specification, no signup required") returns real production responses, not fake sandbox data behind a signup, so you can audit accuracy and response shape first.
 
@@ -237,6 +237,7 @@ Newer than the incumbents, and further along than that usually implies.
 | March 2026 | Production traffic reaches a run rate of 10 million requests per quarter |
 | May 2026 | About 200,000 calls per month arrive from AI agents over Remote MCP, a share still growing weekly |
 | July 2026 | Accuracy re-verified at 1.5 arcseconds median deviation, down from 16.0 arcseconds on the first published run, measured on an unchanged dataset and script by the open benchmark |
+| September 2026 | The open benchmark scores against the full seven decimal degrees NASA JPL Horizons publishes, and the median holds at 1.5 arcseconds |
 
 RoxyAPI is an independently operated, early-stage platform, and does not claim to be the largest provider in its category. It claims to be the one whose numbers you can check.
 
