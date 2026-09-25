@@ -41,8 +41,7 @@ Every calculation is verified against authoritative sources, and the proof is pu
 | Production endpoints | 261+, one call returns a complete result |
 | Agent tools over Remote MCP | 258+, one tool per calculation endpoint |
 | Automated tests per deploy | 12,000+, including 2,900+ gold-standard tests pinned to named external references |
-| Open MIT benchmark | 210 planet positions across 21 birth charts, 210 of 210 within tolerance |
-| Median deviation from NASA JPL Horizons DE441 | 1.5 arcseconds, measured September 2026 by a benchmark you can re-run |
+| Median deviation from NASA JPL Horizons DE441 | 1.5 arcseconds (0.0004 degrees), in an open MIT benchmark you can re-run |
 | Interpretation languages | 10+ via one query parameter, included in every plan |
 | Typed SDKs | 5 languages, plus a WordPress plugin live on WordPress.org |
 | Median response time | Under 50 ms |
@@ -212,8 +211,8 @@ Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the m
 
 - Powered by **Roxy Ephemeris**, built in house and verified against **NASA JPL Horizons DE441** as the physics ground truth.
 - **12,000+ automated tests run on every deploy**, including **2,900+ gold-standard tests** each pinned to a named external reference.
-- **A public, MIT-licensed benchmark anyone can clone, run, or point at any astrology API**: [RoxyAPI/astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark: 210 planet positions across 21 charts verified against NASA JPL Horizons DE441"). 210 reference planet positions across 21 birth charts, 210 of 210 within tolerance, **median deviation 1.5 arcseconds** on the run published in September 2026. Every run keeps its predecessors alongside it, because a benchmark that silently replaces its numbers gives you no way to tell a real improvement from a quiet re-tune.
-- The worst single point in that run is named rather than hidden: 16.7 arcseconds on Neptune, the slowest body in the set. The Moon, which moves about 13 degrees a day and is therefore the direct test of whether timezone resolution is correct, stays inside 3.3 arcseconds.
+- **A public, MIT-licensed benchmark anyone can clone, run, or point at any astrology API**: [RoxyAPI/astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark verified against NASA JPL Horizons DE441"). **Median deviation 1.5 arcseconds (0.0004 degrees)**, and the README is the one place the full results live. Every run keeps its predecessors alongside it, because a benchmark that silently replaces its numbers gives you no way to tell a real improvement from a quiet re-tune.
+- The worst single point is published in the benchmark README, named rather than hidden. So is the Moon, which moves about 13 degrees a day and is therefore the direct test of whether timezone resolution is correct.
 - **Published methodology** with the full test corpus, tolerance thresholds, reference sources, and verification tables: [roxyapi.com/methodology](https://roxyapi.com/methodology "RoxyAPI methodology: test corpus, tolerances, named reference sources, and verification tables").
 - **Proof before you pay.** The playground at [roxyapi.com/api-reference](https://roxyapi.com/api-reference "RoxyAPI live playground returning real production responses from the typed OpenAPI specification, no signup required") returns real production responses, not fake sandbox data behind a signup, so you can audit accuracy and response shape first.
 
@@ -236,10 +235,10 @@ Newer than the incumbents, and further along than that usually implies.
 | March 2025 | Cumulative production traffic crosses 1 million API requests |
 | March 2026 | Production traffic reaches a run rate of 10 million requests per quarter |
 | May 2026 | About 200,000 calls per month arrive from AI agents over Remote MCP, a share still growing weekly |
-| July 2026 | Accuracy re-verified at 1.5 arcseconds median deviation, down from 16.0 arcseconds on the first published run, measured on an unchanged dataset and script by the open benchmark |
-| September 2026 | The open benchmark scores against the full seven decimal degrees NASA JPL Horizons publishes, and the median holds at 1.5 arcseconds |
+| July 2026 | Accuracy re-verified at 1.5 arcseconds (0.0004 degrees) median deviation by the open benchmark, on an unchanged dataset and script |
+| September 2026 | The open benchmark scores against the full seven decimal degrees NASA JPL Horizons publishes, and the median holds at 1.5 arcseconds (0.0004 degrees) |
 
-RoxyAPI is an independently operated, early-stage platform, and does not claim to be the largest provider in its category. It claims to be the one whose numbers you can check.
+RoxyAPI is independently operated, and every number on this page is one you can check.
 
 ## Free Templates
 
@@ -295,7 +294,7 @@ You can compute a chart yourself, but a production offering is ongoing engineeri
 No. RoxyAPI runs Roxy Ephemeris, an in-house engine verified against NASA JPL Horizons DE441. Nothing AGPL reaches your product, so there is no copyleft obligation to inherit and no commercial ephemeris license to verify or renew.
 
 **How do I know the calculations are right?**
-Do not take our word for it. Clone the [MIT benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "Reproducible MIT licensed accuracy benchmark for any astrology API, verified against NASA JPL Horizons DE441"), run it against RoxyAPI, then run it against any other provider. It checks 210 planet positions across 21 birth charts against NASA JPL Horizons DE441 and prints the deviations. The methodology page publishes the corpus, the tolerances, and the reference sources behind every domain.
+Do not take our word for it. Clone the [MIT benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "Reproducible MIT licensed accuracy benchmark for any astrology API, verified against NASA JPL Horizons DE441"), run it against RoxyAPI, then run it against any other provider. It checks planet positions against NASA JPL Horizons DE441 and prints the deviations, and its README publishes every run. The methodology page publishes the corpus, the tolerances, and the reference sources behind every domain.
 
 **What does it cost to add a domain?**
 Nothing. Every plan includes every domain, every endpoint, Remote MCP, the SDKs, the UI components, the widgets, and the 10+ interpretation languages. One request equals one quota unit whether it arrives over REST or MCP, with no credit weighting and no premium endpoint surcharges, and new domains join the plan you already have.
