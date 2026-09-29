@@ -107,7 +107,7 @@ Category-level, no names. Run these checks against any vendor you are evaluating
 | Remote MCP server per domain, hosted, no local process | Yes | Varies, local stdio wrappers | No, build your own |
 | Token-optimized agent responses | Yes, opt-in and lossless | Not offered | Not offered |
 | Bring your own LLM, no per-token markup, no hidden system prompt | Yes | Varies, markups and locked prompts | Yes |
-| Automated tests published per deploy | Yes, 12,000+ with 2,900+ gold-standard | Not published | Varies, yours to write |
+| Automated tests published per deploy | Yes, 12,000+ with 3,000+ gold-standard | Not published | Varies, yours to write |
 | Open benchmark anyone can clone and re-run against any provider | Yes, MIT licensed | No public artifact | Run it yourself |
 | Real production responses before you pay | Yes, no signup | Varies, signup or sandbox | Install first |
 | Uptime reported by an independent third party | Yes | Varies, self reported | No, yours to run |
@@ -210,8 +210,8 @@ Live component gallery and theming reference: [roxyapi.com/ui](https://roxyapi.c
 Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the moat, and publishes the evidence rather than asking to be trusted.
 
 - Powered by **Roxy Ephemeris**, built in house, reading the **NASA JPL DE440** ephemeris directly and verified against **NASA JPL Horizons DE441** as the physics ground truth.
-- **12,000+ automated tests run on every deploy**, including **2,900+ gold-standard tests** each pinned to a named external reference.
-- **A public, MIT-licensed benchmark anyone can clone, run, or point at any astrology API**: [RoxyAPI/astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark verified against NASA JPL Horizons DE441"). **Median deviation 1.5 arcseconds (0.0004 degrees)**, and the README is the one place the full results live. Every run keeps its predecessors alongside it, because a benchmark that silently replaces its numbers gives you no way to tell a real improvement from a quiet re-tune.
+- **12,000+ automated tests run on every deploy**, including **3,000+ gold-standard tests** each pinned to a named external reference.
+- **A public, MIT-licensed benchmark anyone can clone, run, or point at any astrology API**: [RoxyAPI/astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark verified against NASA JPL Horizons DE441"). **Median deviation 0.05 arcseconds (0.00001 degrees)**, and the README is the one place the full results live: the per-body maxima, the percentiles and every reference value, with the script and the dataset to reproduce them.
 - The worst single point is published in the benchmark README, named rather than hidden. So is the Moon, which moves about 13 degrees a day and is therefore the direct test of whether timezone resolution is correct.
 - **Published methodology** with the full test corpus, tolerance thresholds, reference sources, and verification tables: [roxyapi.com/methodology](https://roxyapi.com/methodology "RoxyAPI methodology: test corpus, tolerances, named reference sources, and verification tables").
 - **Proof before you pay.** The playground at [roxyapi.com/api-reference](https://roxyapi.com/api-reference "RoxyAPI live playground returning real production responses from the typed OpenAPI specification, no signup required") returns real production responses, not fake sandbox data behind a signup, so you can audit accuracy and response shape first.
