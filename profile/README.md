@@ -40,8 +40,8 @@ Every calculation is verified against authoritative sources, and the proof is pu
 | Domains under one key | 18+, each a genuinely distinct system |
 | Production endpoints | 261+, one call returns a complete result |
 | Agent tools over Remote MCP | 258+, one tool per calculation endpoint |
-| Automated tests per deploy | 12,000+, including 2,900+ gold-standard tests pinned to named external references |
-| Median deviation from NASA JPL Horizons DE441 | 1.5 arcseconds (0.0004 degrees), in an open MIT benchmark you can re-run |
+| Automated tests per deploy | 12,000+, including 3,000+ gold-standard tests pinned to named external references |
+| Median deviation from NASA JPL Horizons DE441 | 0.05 arcseconds (0.00001 degrees), in an open MIT benchmark you can re-run |
 | Interpretation languages | 10+ via one query parameter, included in every plan |
 | Typed SDKs | 5 languages, plus a WordPress plugin live on WordPress.org |
 | Median response time | Under 50 ms |
@@ -209,7 +209,7 @@ Live component gallery and theming reference: [roxyapi.com/ui](https://roxyapi.c
 
 Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the moat, and publishes the evidence rather than asking to be trusted.
 
-- Powered by **Roxy Ephemeris**, built in house and verified against **NASA JPL Horizons DE441** as the physics ground truth.
+- Powered by **Roxy Ephemeris**, built in house, reading the **NASA JPL DE440** ephemeris directly and verified against **NASA JPL Horizons DE441** as the physics ground truth.
 - **12,000+ automated tests run on every deploy**, including **2,900+ gold-standard tests** each pinned to a named external reference.
 - **A public, MIT-licensed benchmark anyone can clone, run, or point at any astrology API**: [RoxyAPI/astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark verified against NASA JPL Horizons DE441"). **Median deviation 1.5 arcseconds (0.0004 degrees)**, and the README is the one place the full results live. Every run keeps its predecessors alongside it, because a benchmark that silently replaces its numbers gives you no way to tell a real improvement from a quiet re-tune.
 - The worst single point is published in the benchmark README, named rather than hidden. So is the Moon, which moves about 13 degrees a day and is therefore the direct test of whether timezone resolution is correct.
@@ -235,8 +235,7 @@ Newer than the incumbents, and further along than that usually implies.
 | March 2025 | Cumulative production traffic crosses 1 million API requests |
 | March 2026 | Production traffic reaches a run rate of 10 million requests per quarter |
 | May 2026 | About 200,000 calls per month arrive from AI agents over Remote MCP, a share still growing weekly |
-| July 2026 | Accuracy re-verified at 1.5 arcseconds (0.0004 degrees) median deviation by the open benchmark, on an unchanged dataset and script |
-| September 2026 | The open benchmark scores against the full seven decimal degrees NASA JPL Horizons publishes, and the median holds at 1.5 arcseconds (0.0004 degrees) |
+| September 2026 | Roxy Ephemeris reads the NASA JPL DE440 ephemeris directly, and the open benchmark median is 0.05 arcseconds (0.00001 degrees) on the same dataset and script |
 
 RoxyAPI is independently operated, and every number on this page is one you can check.
 
@@ -291,7 +290,7 @@ No. Astrology is one of 18+ distinct domains on the same key, alongside Vedic an
 You can compute a chart yourself, but a production offering is ongoing engineering: accuracy verified against NASA JPL Horizons and kept verified, 18+ domains on one key, interpretations in 10+ languages, Remote MCP, typed SDKs, UI components and widgets, and the uptime and support behind all of it. Licensing comes first: the free path most package managers hand you is a copyleft wrapper, and copyleft triggers on network access. If you need exactly one domain and can self-host, a library is cheaper, and we say so.
 
 **Do you use Swiss Ephemeris?**
-No. RoxyAPI runs Roxy Ephemeris, an in-house engine verified against NASA JPL Horizons DE441. Nothing AGPL reaches your product, so there is no copyleft obligation to inherit and no commercial ephemeris license to verify or renew.
+No. RoxyAPI runs Roxy Ephemeris, an in-house engine that reads the NASA JPL DE440 ephemeris directly and is verified against NASA JPL Horizons DE441. Nothing AGPL reaches your product, so there is no copyleft obligation to inherit and no commercial ephemeris license to verify or renew.
 
 **How do I know the calculations are right?**
 Do not take our word for it. Clone the [MIT benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "Reproducible MIT licensed accuracy benchmark for any astrology API, verified against NASA JPL Horizons DE441"), run it against RoxyAPI, then run it against any other provider. It checks planet positions against NASA JPL Horizons DE441 and prints the deviations, and its README publishes every run. The methodology page publishes the corpus, the tolerances, and the reference sources behind every domain.
