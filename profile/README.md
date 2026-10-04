@@ -4,34 +4,18 @@
 
 # RoxyAPI
 
+**RoxyAPI is the data layer for insight, belief and prediction apps: one Astrology API key for all 18+ insight domains, with a hosted astrology MCP server for every domain.** Western and Vedic astrology, forecast, Human Design, Chinese astrology, feng shui, Mesoamerican astrology, Vastu, numerology, Kabbalah, tarot, biorhythm, Ayurveda, I Ching, crystals, dreams, angel numbers and location, through one REST API, typed SDKs in five languages, and Remote MCP. Calculations read the NASA JPL DE440 ephemeris directly and are verified against NASA JPL Horizons. One request is one unit on every endpoint, nothing AGPL sits anywhere in the stack, and every plan includes every domain.
+
+The Spiritual OS layer for agentic AI. Your app and your agents plug in; your model, your prompt and your users stay yours.
+
 [![Live API](https://img.shields.io/badge/API-Live_playground-1f6feb?style=flat-square&logo=swagger&logoColor=white)](https://roxyapi.com/api-reference)
+[![MCP](https://img.shields.io/badge/MCP-Remote_%26_stdio-ec4899?style=flat-square)](https://github.com/RoxyAPI/astrology-mcp-server)
 [![Methodology](https://img.shields.io/badge/Methodology-NASA_JPL_verified-fb923c?style=flat-square)](https://roxyapi.com/methodology)
 [![Benchmark](https://img.shields.io/badge/Benchmark-Open_%26_MIT-22c55e?style=flat-square&logo=github&logoColor=white)](https://github.com/RoxyAPI/astrology-api-benchmark)
+[![OpenAPI](https://img.shields.io/badge/OpenAPI-3.1_spec-6ba539?style=flat-square&logo=openapiinitiative&logoColor=white)](https://github.com/RoxyAPI/astrology-api-openapi)
 [![Pricing](https://img.shields.io/badge/Pricing-Plans_%26_quotas-0ea5e9?style=flat-square)](https://roxyapi.com/pricing)
 [![Templates](https://img.shields.io/badge/Templates-MIT_licensed-8b5cf6?style=flat-square)](https://roxyapi.com/templates)
-[![MCP](https://img.shields.io/badge/MCP-Remote_%26_no_setup-ec4899?style=flat-square)](https://roxyapi.com/docs/mcp)
 [![Widgets](https://img.shields.io/badge/Widgets-No_code_embeds-14b8a6?style=flat-square)](https://roxyapi.com/widgets)
-
-**Official SDKs**
-
-[![npm](https://img.shields.io/npm/v/@roxyapi/sdk?style=flat-square&logo=npm&label=%40roxyapi%2Fsdk)](https://www.npmjs.com/package/@roxyapi/sdk)
-[![PyPI](https://img.shields.io/pypi/v/roxy-sdk?style=flat-square&logo=pypi&logoColor=white&label=roxy-sdk)](https://pypi.org/project/roxy-sdk/)
-[![Packagist](https://img.shields.io/packagist/v/roxyapi/sdk?style=flat-square&logo=packagist&logoColor=white&label=roxyapi%2Fsdk)](https://packagist.org/packages/roxyapi/sdk)
-[![NuGet](https://img.shields.io/nuget/v/RoxyApi.Sdk?style=flat-square&logo=nuget&logoColor=white&label=RoxyApi.Sdk)](https://www.nuget.org/packages/RoxyApi.Sdk)
-[![Go module](https://img.shields.io/github/v/tag/RoxyAPI/sdk-go?style=flat-square&logo=go&logoColor=white&label=sdk-go)](https://pkg.go.dev/github.com/RoxyAPI/sdk-go)
-[![WordPress plugin](https://img.shields.io/wordpress/plugin/v/roxyapi?style=flat-square&logo=wordpress&logoColor=white&label=wordpress.org)](https://wordpress.org/plugins/roxyapi/)
-
-**UI Components**
-
-[![@roxyapi/ui](https://img.shields.io/npm/v/@roxyapi/ui?style=flat-square&logo=webcomponentsdotorg&logoColor=white&label=%40roxyapi%2Fui)](https://www.npmjs.com/package/@roxyapi/ui)
-[![@roxyapi/ui-react](https://img.shields.io/npm/v/@roxyapi/ui-react?style=flat-square&logo=react&logoColor=white&label=%40roxyapi%2Fui-react)](https://www.npmjs.com/package/@roxyapi/ui-react)
-[![@roxyapi/ui-vue](https://img.shields.io/npm/v/@roxyapi/ui-vue?style=flat-square&logo=vuedotjs&logoColor=white&label=%40roxyapi%2Fui-vue)](https://www.npmjs.com/package/@roxyapi/ui-vue)
-
-The Spiritual OS layer for agentic AI: the data behind insight, belief, and prediction products.
-
-RoxyAPI is the only multi-domain spiritual intelligence API. 261+ production endpoints across 18+ genuinely distinct domains behind one API key, with a Remote MCP server per domain, verified astronomy, and clean commercial licensing. Distinct means distinct: astrology is one domain that includes natal charts, horoscopes, synastry, and transits, not three domains counted separately. Think of it as the Stripe of insight APIs, the Spiritual OS layer your app and your agents plug into, so builders ship in days instead of months.
-
-Every calculation is verified against authoritative sources, and the proof is public and re-runnable by you. Clone the benchmark, point it at us, point it at anyone else.
 
 ## RoxyAPI at a glance
 
@@ -39,111 +23,26 @@ Every calculation is verified against authoritative sources, and the proof is pu
 |---|---|
 | Domains under one key | 18+, each a genuinely distinct system |
 | Production endpoints | 261+, one call returns a complete result |
-| Agent tools over Remote MCP | 258+, one tool per calculation endpoint |
-| Automated tests per deploy | 12,000+, including 3,000+ gold-standard tests pinned to named external references |
+| Agent tools over Remote MCP | 258+, one tool per calculation endpoint, one hosted server per domain |
+| Automated tests per deploy | 13,000+, including 3,000+ gold-standard tests pinned to named external references |
 | Median deviation from NASA JPL Horizons DE441 | 0.05 arcseconds (0.00001 degrees), in an open MIT benchmark you can re-run |
 | Interpretation languages | 10+ via one query parameter, included in every plan |
-| Typed SDKs | 5 languages, plus a WordPress plugin live on WordPress.org |
+| Typed SDKs | TypeScript, Python, PHP, C# and Go, plus a WordPress plugin and an n8n node |
+| Pricing | 1 request = 1 unit on REST and MCP alike, no credit weighting. From 39 USD per month for every domain, as low as 1.80 USD per domain on annual billing |
 | Median response time | Under 50 ms |
-| Uptime | 100 percent measured over the last six months on an [independent status page](https://stats.uptimerobot.com/T0kPZKlAjf "Live RoxyAPI uptime on UptimeRobot, an independently hosted third party status page") we cannot edit, against a 99.95 percent SLA |
+| Uptime | Reported on an [independent status page](https://stats.uptimerobot.com/T0kPZKlAjf "Live RoxyAPI uptime on UptimeRobot, an independently hosted third party status page") we cannot edit, against a 99.95 percent SLA |
 | Data at rest | Germany, inside the EU, on every plan |
 | Licensing | Commercial on every plan. No AGPL, no copyleft, no royalties |
-| Entry price | 39 USD per month for every domain, as low as 1.80 USD per domain on annual billing |
 
 Every structural figure above is re-countable by you against the [live OpenAPI spec](https://roxyapi.com/api/v2/openapi.json "The combined RoxyAPI OpenAPI specification, generated from production so it cannot drift") and this GitHub org. Usage figures and their measurement dates are published at [roxyapi.com/transparency](https://roxyapi.com/transparency "RoxyAPI transparency report: structural counts, dated usage figures, and citable facts").
 
-## What RoxyAPI does
+## Astrology MCP servers for AI agents
 
-One subscription gives builders production-ready access to every major insight and prediction domain through a single REST API and a single set of Remote MCP servers. Domains in canonical order:
+RoxyAPI ships Remote MCP over Streamable HTTP: hosted, one server per domain, nothing to install. Point a client at a URL and it runs.
 
-- **Western astrology**: natal charts, daily, weekly and monthly horoscopes, synastry, composite charts, compatibility scoring, transits, moon phase. Placidus, whole-sign, equal, and Koch house systems.
-- **Vedic and KP astrology**: kundli, detailed panchang (rahu kaal, abhijit muhurta, brahma muhurta, choghadiya, hora), Vimshottari dasha down to sookshma with the full 120-year timeline, dosha analysis (Manglik, Kaal Sarp, Sade Sati), navamsa and divisional charts, 36-point Ashtakoota Guna Milan compatibility, plus KP sub-lord, sub-sub-lord, cuspal, and ruling-planet horary. KP is the sharpest technical differentiator versus generic Vedic providers.
-- **Forecast**: cross-domain predictive timelines, transit windows, and significant-date detection across Western, Vedic, and biorhythm signals for any date range, in one request.
-- **Human Design**: full bodygraph (type, strategy, inner authority, profile, definition, incarnation cross), defined and open centers, channels, gates, Variables, Penta, current transit overlay, and two-person connection charts.
-- **Chinese astrology**: BaZi Four Pillars with hidden stems, Na Yin and Ten God relations, luck pillars, day master strength, Chinese zodiac and animal compatibility, and the lunisolar calendar with solar terms as astronomical instants. The school splits that make two calculators disagree are typed parameters, and every chart echoes the conventions it was computed under.
-- **Feng shui**: Xuan Kong flying star natal charts for all nine periods and 24 mountains, Kua numbers with the full Eight Mansions map, annual and monthly star plates, the four annual afflictions with exact degree spans, and the Bagua map. Chinese years resolve at Li Chun, computed astronomically.
-- **Mesoamerican astrology**: the Tzolkin day sign with its coefficient, trecena and a composed reading in three orthographies, the full Mayan chart (Haab, five-position Long Count, Calendar Round, Lord of the Night, Year Bearer, Cruz Maya), a Long Count converter that runs both ways back to 3114 BCE, daily and monthly Tzolkin readings, nawal compatibility, and the Aztec tonalpohualli. The correlation constant is a typed parameter, echoed on every response, so two calculators can be reconciled instead of argued about.
-- **Vastu**: entrance pada for any main door direction with the classical effect cited to its verse, the Vastu Purusha Mandala on the 81 and 64 pada grids, plot analysis, Ayadi shadvarga, room placement compliance, griha pravesh dates found over the panchang, and the dikpala and devata references. Every rule carries its primary-text citation as a typed field.
-- **Numerology**: Life Path, full chart, compatibility, personal year, expression. Pythagorean reduction with master-number (11, 22, 33) and karmic-debt detection.
-- **Kabbalah**: gematria over eleven rabbinic ciphers with every candidate Hebrew spelling of a Latin name shown and the rule that chose it, name and birth profiles (Hebrew date, Hebrew birthday, the three birth angels), the 72 names derived from the verses rather than stored, the Tree of Life with typed school variants, the 22 Hebrew letters with their attributions, name compatibility, and the sephirah of the day.
-- **Tarot**: daily card, three-card spread, Celtic Cross, yes-no, love spread, career spread, custom draws. Deterministic seeded draws for once-per-day behavior.
-- **Biorhythm**: daily, multi-day forecast, compatibility, critical-day alerts. 10 cycle types.
-- **Ayurveda**: constitution read from the birth chart with no questionnaire, dinacharya from sunrise with the dosha clock and brahma muhurta, ritucharya resolved from solar longitude rather than calendar months, a daily reading by location, and the dosha, rasa and guna catalogues. General-wellness framing, with a disclaimer on every response.
-- **I Ching**: 64-hexagram catalog, daily hexagram, three-coin cast with changing lines and resulting hexagram.
-- **Crystals**: by zodiac, by chakra, birthstone, free-text search.
-- **Dream interpretation**: symbol catalog, daily symbol, structured meanings.
-- **Angel numbers**: by exact number, universal lookup with digit-root fallback, daily.
-- **Location and timezone resolution** for accurate birth-data inputs (call this first when any chart endpoint needs coordinates).
+**Runtime agents** (Claude Desktop, n8n, Zapier, Copilot Studio, Mistral, Perplexity, and any agent framework that can set a request header) use the domain servers, which perform real calculations. One API key unlocks every domain.
 
-Every endpoint returns structured JSON, ships rich field descriptions so tool-calling agents know when and how to call it, and is callable from REST, the official SDKs, or Remote MCP. Interpretations are localized in 10+ languages through one `?lang=` parameter, at no extra cost on any plan.
-
-## Simple surface, advanced core
-
-Breadth usually costs depth. Here it does not, and the answer is named endpoints rather than adjectives. One request returns a complete result, so the advanced layer lives inside the engine instead of inside your integration.
-
-| Domain | What ships past the basics |
-|---|---|
-| [Western astrology](https://roxyapi.com/products/astrology-api "RoxyAPI western astrology: fixed stars, asteroids, Arabic lots, aspect patterns, progressions, solar arc, profections, astrocartography, relocation and local space maps, and return charts") | Fixed stars, asteroid goddesses, Arabic lots, Black Moon Lilith, aspect pattern detection, secondary progressions, solar arc directions, annual profections, astrocartography, relocation charts, local space, and the solar, lunar and planetary return charts. |
-| [Vedic and KP](https://roxyapi.com/products/vedic-astrology-api "RoxyAPI Vedic astrology: 44 yoga verdicts with classical evidence, shadbala, bhava bala, ashtakavarga, Arudha padas, Chara Karakas, avasthas, upagrahas, and KP sub-lords") | 44 classical yoga verdicts, each carrying the classical evidence that triggered it and the precedence rule that silenced it, so an agent can explain a judgement instead of restating a label. All 32 Nabhasa yogas included. Plus shadbala, bhava bala, ashtakavarga, Arudha padas, Chara Karakas, upagrahas, bhav chalit, heliacal visibility, 17 avastha states across three classical systems, and KP sub-lords. |
-| [Human Design](https://roxyapi.com/products/human-design-api "RoxyAPI human design: Variables with Color, Tone and Base, Penta group analysis, connection charts, and transit overlays on a natal bodygraph") | Variables with Color, Tone and Base for the advanced Primary Health System layer, Penta for small-group analysis, two-person connection charts, and transit overlays on a natal bodygraph. |
-| [Forecast](https://roxyapi.com/products/forecast-api "RoxyAPI forecast: one request merges western transit events, Vimshottari dasha boundaries, and biorhythm critical days into a single significance-scored timeline") | One request merges western transit events, Vimshottari dasha boundaries, and biorhythm critical days into a single time-ordered, significance-scored feed. |
-| [Mesoamerican astrology](https://roxyapi.com/products/mesoamerican-astrology-api "RoxyAPI Mesoamerican astrology: four correlation constants, three name traditions, a typed Year Bearer school, and a Long Count converter that runs both ways") | Four published correlation constants as a typed field with the resolved value echoed, the day sign in Yucatec, sixteenth-century and Kʼicheʼ namings at once, the Year Bearer school as a typed choice, and a Long Count converter that reaches 0.0.0.0.0 with a note on the Gregorian reform for any date before 1582. |
-| [Vastu](https://roxyapi.com/products/vastu-api "RoxyAPI Vastu: per-rule verse citations as typed fields, text-parameterised Ayadi, and griha pravesh dates composed over the panchang") | Every effect cites its verse as a typed `source` object rather than a footnote, Ayadi is parameterised by the text it follows, and griha pravesh dates are found over the same panchang engine the Vedic domain runs on. |
-| [Kabbalah](https://roxyapi.com/products/kabbalah-api "RoxyAPI Kabbalah: every candidate Hebrew spelling returned, ten typed conventions echoed on the response, the 72 names derived from the verses") | Every candidate Hebrew spelling of a name with its own cipher values and breakdown, ten school conventions as typed request fields echoed back under `conventions`, the 72 names derived from Exodus 14:19 to 21 rather than copied from a table, and two published methods for dating the birth angel as a switch. |
-| [Ayurveda](https://roxyapi.com/products/ayurveda-api "RoxyAPI Ayurveda: constitution from the three classical chart factors, ritucharya from solar longitude, no questionnaire and no health input") | Constitution from the three classical factors of the birth chart with their verses, ritu resolved from the exact solar longitude instead of a calendar month, dinacharya as clock times from the local sunrise, and no health input anywhere in the domain. |
-
-**The domains compose, they do not merely coexist.** Human Design is computed FROM the western ephemeris and the I Ching hexagram set rather than bolted on as a separate product line, so every gate activation carries its hexagram. The Ayurvedic constitution is read FROM the Vedic birth chart, and Vastu griha pravesh dates are found over the same panchang. The sidereal and tropical engines are tested to return the same sky at zero tolerance. That is what makes one engine a fact instead of a slogan, and it is the capability that cannot be assembled by stitching single-domain vendors together.
-
-## How RoxyAPI compares
-
-Category-level, no names. Run these checks against any vendor you are evaluating, including us.
-
-| Capability | RoxyAPI | Legacy astrology APIs | DIY open source libraries |
-|---|---|---|---|
-| Domains under one key and one subscription | Yes, 18+ | No, priced per product | No, one library each |
-| One call returns a complete result | Yes | Often split across separately billed calls | Assembly required |
-| Flat request pricing, 1 request equals 1 unit on REST and MCP alike | Yes | Varies, credit tables weight endpoints | Yes, self hosted |
-| New domains land inside the existing plan | Yes, at no extra cost | No, new invoice | No, new build |
-| Remote MCP server per domain, hosted, no local process | Yes | Varies, local stdio wrappers | No, build your own |
-| Token-optimized agent responses | Yes, opt-in and lossless | Not offered | Not offered |
-| Bring your own LLM, no per-token markup, no hidden system prompt | Yes | Varies, markups and locked prompts | Yes |
-| Automated tests published per deploy | Yes, 12,000+ with 3,000+ gold-standard | Not published | Varies, yours to write |
-| Open benchmark anyone can clone and re-run against any provider | Yes, MIT licensed | No public artifact | Run it yourself |
-| Real production responses before you pay | Yes, no signup | Varies, signup or sandbox | Install first |
-| Uptime reported by an independent third party | Yes | Varies, self reported | No, yours to run |
-| Typed SDKs generated from a live spec that cannot drift | Yes, 5 languages | Varies, fewer languages, hand-kept exports | No, read the source |
-| Drop-in UI components and no-code embeddable widgets | Yes | No | No |
-| Full editorial interpretation text localized in 10+ languages | Yes, publish ready | Varies, daily horoscopes mostly | No, numbers only |
-| Engine free of AGPL copyleft exposure | Yes, none | Varies, inherited from a copyleft wrapper | No, copyleft is common |
-| Commercial license on every plan, no source disclosure | Yes | Varies, enterprise or on request | No, copyleft terms |
-| EU data residency with an Article 28 DPA on every plan | Yes, Germany, all plans | Varies, enterprise or on request | Yours to write |
-| Stateless, zero end-user data stored | Yes | Varies, accounts and logs | Yes, self hosted |
-
-**Honest footnote.** If you need exactly one domain, run your own servers, and are comfortable with copyleft licensing, a free open source library is the cheaper choice. Everything else in this table is where RoxyAPI earns its keep.
-
-## Remote MCP servers
-
-RoxyAPI was MCP-first from day one, and ships two kinds of Remote MCP server over Streamable HTTP for two different jobs. No local processes, no stdio wrappers, no self-hosting. Point a client at a URL and it is running in seconds.
-
-### Docs server, for coding agents
-
-The Docs server at `https://roxyapi.com/mcp/docs` exposes one tool, `search_docs`, over the entire RoxyAPI reference: every endpoint, parameter, SDK call, and guide. It returns documentation only, never live calculations. This is the server to give an AI coding assistant such as GitHub Copilot, Claude Code, Cursor, Codex, or Gemini CLI. Connect it while you build and the agent wires the whole RoxyAPI stack into your app, with the right field names the first time, in under 30 minutes.
-
-```json
-{
-  "mcpServers": {
-    "roxy-docs": {
-      "url": "https://roxyapi.com/mcp/docs"
-    }
-  }
-}
-```
-
-### Domain servers, for runtime agents
-
-Each product domain ships its own MCP server that performs real calculations. These are for the runtime agents and automations your users actually interact with: ChatGPT, Claude Desktop, and Gemini, workflow tools like n8n, Make, and Zapier, agent platforms like Dify and CrewAI, and Telegram, WhatsApp, and Slack bots. One API key unlocks every domain.
-
-| Domain | MCP endpoint |
+| Domain | Remote MCP endpoint |
 |---|---|
 | Western astrology | `https://roxyapi.com/mcp/astrology` |
 | Vedic and KP astrology | `https://roxyapi.com/mcp/vedic-astrology` |
@@ -164,42 +63,46 @@ Each product domain ships its own MCP server that performs real calculations. Th
 | Angel numbers | `https://roxyapi.com/mcp/angel-numbers` |
 | Location and timezone | `https://roxyapi.com/mcp/location` |
 
-Authenticate the domain servers with your API key, exactly as documented at [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp "RoxyAPI Remote MCP setup: server URLs, client configuration, compact responses, and which server to point a coding agent at"). Rule of thumb: a coding agent wants the Docs server to write the integration, a runtime agent wants a domain server to compute a real chart.
+Client setup, authentication and every config format: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp "RoxyAPI Remote MCP setup: server URLs, client configuration, compact responses, and which server to point a coding agent at").
 
-**Lower inference cost, same data.** Pass `compact: true` on any tool call for an opt-in, lossless token-optimized response. Arrays of same-shaped rows are sent columnar, so a field name travels once instead of once per row. Measured reduction against the standard response: about 40 percent fewer tokens on a natal chart, about 52 percent on astrocartography. Your quota is unchanged, because 1 request stays 1 unit. What drops is what your model pays to read the answer.
+**Clients that only start local servers** run the open source [astrology-mcp-server](https://github.com/RoxyAPI/astrology-mcp-server "RoxyAPI astrology MCP server: a stdio package that relays to the hosted Remote MCP servers, same tools, same key") package, or Claude Desktop users double-click the one-file [desktop extension](https://github.com/RoxyAPI/astrology-mcp-server/releases/latest/download/astrology-mcp-server.mcpb "RoxyAPI astrology MCP server as a one-click Claude Desktop extension"). Both relay to the same hosted servers, so the tools, the answers and the billing are identical:
 
-The flagship multi-MCP reference integration is [RoxyAPI/astrology-ai-chatbot](https://github.com/RoxyAPI/astrology-ai-chatbot "Open source MIT licensed AI astrology chatbot wiring multiple RoxyAPI Remote MCP servers into one conversational agent"), an MIT-licensed chatbot template that wires multiple RoxyAPI MCP servers into a single conversational agent. RoxyAPI is also installable as a [Claude Code plugin](https://github.com/RoxyAPI/claude-plugin "RoxyAPI Claude Code plugin and marketplace: bundles the keyless docs MCP server and a skill in one install") and ships [Postman collections](https://github.com/RoxyAPI/postman-collections "RoxyAPI Postman collections for every domain, generated from the live OpenAPI specification") generated from the live spec.
+```json
+{
+  "mcpServers": {
+    "roxy-astrology": {
+      "command": "npx",
+      "args": ["-y", "@roxyapi/mcp"],
+      "env": { "ROXY_API_KEY": "your-key" }
+    }
+  }
+}
+```
 
-## Official SDKs
+**Coding agents** (GitHub Copilot, Claude Code, Cursor, Codex, Gemini CLI) use the keyless docs server at `https://roxyapi.com/mcp/docs`. Its one tool, `search_docs`, searches every endpoint, parameter, SDK call and guide, so the agent wires the integration with the right field names the first time. RoxyAPI is also a one-step [Claude Code plugin](https://github.com/RoxyAPI/claude-plugin "RoxyAPI Claude Code plugin and marketplace: bundles the keyless docs MCP server and a skill in one install").
 
-| Language | Package | Repository |
-|---|---|---|
-| TypeScript | `@roxyapi/sdk` | [RoxyAPI/sdk-typescript](https://github.com/RoxyAPI/sdk-typescript) |
-| Python | `roxy-sdk` | [RoxyAPI/sdk-python](https://github.com/RoxyAPI/sdk-python) |
-| PHP | `roxyapi/sdk` | [RoxyAPI/sdk-php](https://github.com/RoxyAPI/sdk-php) |
-| C# and .NET | `RoxyApi.Sdk` | [RoxyAPI/sdk-dotnet](https://github.com/RoxyAPI/sdk-dotnet) |
-| Go | `github.com/RoxyAPI/sdk-go` | [RoxyAPI/sdk-go](https://github.com/RoxyAPI/sdk-go) |
-| WordPress plugin | [Live on WordPress.org](https://wordpress.org/plugins/roxyapi/) | [RoxyAPI/sdk-wordpress](https://github.com/RoxyAPI/sdk-wordpress) |
+**Lower inference cost, same data.** Pass `compact: true` on any tool call for a lossless, token-optimized response: arrays of same-shaped rows travel columnar, so a field name is sent once instead of once per row. About 40 percent fewer tokens on a natal chart, about 52 percent on astrocartography. Your quota is unchanged, because 1 request stays 1 unit.
 
-All five code SDKs are generated from the same live OpenAPI specification the API serves, so they cannot drift and new endpoints land in your IDE the day they ship. The C# and .NET package targets net8.0 and netstandard2.0, so it runs on modern .NET, ASP.NET Core, Blazor, MAUI, and Unity. The Go module installs with a single `go get github.com/RoxyAPI/sdk-go` and is built for cloud-native and serverless backends. Each SDK ships an AGENTS.md so AI coding assistants in Cursor, Claude Code, Copilot, and Windsurf call RoxyAPI correctly without prompt engineering.
+**Charts, not paragraphs, in AI chat.** `componentForTool` in the UI library maps any Remote MCP tool name to the component that draws its result, so a chatbot shows a natal wheel, a kundli or a tarot spread beside the model reply. The flagship [astrology-ai-chatbot](https://github.com/RoxyAPI/astrology-ai-chatbot "Open source MIT licensed AI astrology chatbot wiring multiple RoxyAPI Remote MCP servers into one conversational agent") template ships it.
 
-The WordPress plugin is live on WordPress.org for no-code installs: drop a Gutenberg block or a shortcode, no code required.
+## Simple surface, advanced core
 
-## UI components and no-code widgets
+Breadth usually costs depth. Here it does not, and the proof is named endpoints rather than adjectives. One request returns a complete result, so the advanced layer lives inside the engine instead of inside your integration.
 
-Two ways to ship the visual layer without a frontend developer who knows insight domains.
-
-**Roxy UI, for developers.** Drop-in components render the API response for you: natal wheels, synastry charts, Vedic kundli, KP charts, dasha timelines, panchang and choghadiya tables, shadbala and ashtakavarga grids, Human Design bodygraphs, Penta and Variables, tarot spreads, numerology cards, hexagrams, biorhythm curves, and astrocartography maps. Themed with `--roxy-*` CSS custom properties and typed from the OpenAPI spec. Pass the SDK response straight into `data`, with no field renames and no glue code. The same components are generative UI for AI chat: `componentForTool` maps the name of any Remote MCP tool to the component that draws its result, so a chatbot renders a natal chart, a kundli, or a tarot spread beside the model reply, with the compact tool result decoded for it. The recipe is on the [UI components docs](https://roxyapi.com/docs/ui "Roxy UI docs: install paths, theming, and rendering an AI tool result as a component"), the step by step build is the [AI chat widgets tutorial](https://roxyapi.com/docs/tutorials/ai-chat-widgets "Render astrology charts from LLM tool calls: map a Remote MCP tool name to the component that draws its result"), and the flagship chatbot template below ships it. MIT licensed, so white labeling is yours by default. Install exactly one package for your framework.
-
-| Framework | Package |
+| Domain | What ships past the basics |
 |---|---|
-| Web components, any framework or none | [`@roxyapi/ui`](https://www.npmjs.com/package/@roxyapi/ui) |
-| React and Next.js | [`@roxyapi/ui-react`](https://www.npmjs.com/package/@roxyapi/ui-react) |
-| Vue and Nuxt | [`@roxyapi/ui-vue`](https://www.npmjs.com/package/@roxyapi/ui-vue) |
+| [Western astrology](https://roxyapi.com/products/astrology-api "RoxyAPI western astrology: fixed stars, asteroids, Arabic lots, aspect patterns, progressions, solar arc, profections, astrocartography, relocation and local space maps, and return charts") | Natal charts in Placidus, whole-sign, equal and Koch, daily to yearly horoscopes that name the dated sky events behind each reading, synastry, composite and compatibility scoring, plus fixed stars, asteroid goddesses, Arabic lots, Black Moon Lilith, aspect patterns, secondary progressions, solar arc, profections, astrocartography, relocation charts, local space, and solar, lunar and planetary returns. |
+| [Vedic and KP](https://roxyapi.com/products/vedic-astrology-api "RoxyAPI Vedic astrology: 44 yoga verdicts with classical evidence, shadbala, bhava bala, ashtakavarga, Arudha padas, Chara Karakas, avasthas, upagrahas, and KP sub-lords") | Kundli, detailed panchang, Vimshottari dasha to sookshma, doshas, divisional charts, Ashtakoota and South Indian matchmaking, KP sub-lords and ruling planets, and 44 classical yoga verdicts that each carry the evidence that triggered them and the rule that silenced them. Plus shadbala, bhava bala, ashtakavarga, Arudha padas, Chara Karakas, upagrahas, bhav chalit and 17 avastha states. |
+| [Forecast](https://roxyapi.com/products/forecast-api "RoxyAPI forecast: one request merges western transit events, Vimshottari dasha boundaries, and biorhythm critical days into a single significance-scored timeline") | One request merges Western transit events, Vimshottari dasha boundaries and biorhythm critical days into a single time-ordered, significance-scored feed. |
+| [Human Design](https://roxyapi.com/products/human-design-api "RoxyAPI human design: Variables with Color, Tone and Base, Penta group analysis, connection charts, and transit overlays on a natal bodygraph") | Full bodygraph with type, authority, profile and incarnation cross, the design moment solved on the true 88 degree solar arc, Variables with Color, Tone and Base, Penta, connection charts and transit overlays. |
+| [Chinese astrology and feng shui](https://roxyapi.com/products/chinese-astrology-api "RoxyAPI Chinese astrology: BaZi Four Pillars, luck pillars, day master strength, lunisolar calendar and almanac with typed school conventions") | BaZi Four Pillars, luck pillars, day master strength, the lunisolar calendar with solar terms as astronomical instants, the almanac day and auspicious-date search, Xuan Kong flying stars, Kua and Eight Mansions. The school splits that make two calculators disagree are typed parameters, echoed on every response. |
+| [Mesoamerican astrology](https://roxyapi.com/products/mesoamerican-astrology-api "RoxyAPI Mesoamerican astrology: four correlation constants, three name traditions, a typed Year Bearer school, and a Long Count converter that runs both ways") | Tzolkin, Haab, Long Count, Calendar Round and the Aztec tonalpohualli, with four published correlation constants as a typed field and the resolved value echoed back. |
+| [Vastu](https://roxyapi.com/products/vastu-api "RoxyAPI Vastu: per-rule verse citations as typed fields, text-parameterised Ayadi, and griha pravesh dates composed over the panchang") | Entrance padas, the 81 and 64 pada mandala, plot analysis, Ayadi and griha pravesh dates, with every rule citing its verse as a typed `source` field. |
+| [Kabbalah](https://roxyapi.com/products/kabbalah-api "RoxyAPI Kabbalah: every candidate Hebrew spelling returned, ten typed conventions echoed on the response, the 72 names derived from the verses") | Gematria across rabbinic ciphers with every candidate Hebrew spelling of a Latin name shown, birth profiles, the 72 names derived from the verses rather than copied from a table, and the Tree of Life with typed school variants. |
+| [Ayurveda](https://roxyapi.com/products/ayurveda-api "RoxyAPI Ayurveda: constitution from the three classical chart factors, ritucharya from solar longitude, no questionnaire and no health input") | Constitution from the three classical factors of the birth chart with their verses, ritu from the exact solar longitude, and dinacharya as clock times from the local sunrise. General-wellness framing. |
+| Numerology, tarot, biorhythm, I Ching, crystals, dreams, angel numbers | Life Path and full charts with master numbers and karmic debt, seeded tarot spreads, ten biorhythm cycles, three-coin I Ching casts, and structured content catalogues, every one localized. |
 
-Live component gallery and theming reference: [roxyapi.com/ui](https://roxyapi.com/ui "Roxy UI live component gallery: MIT licensed framework agnostic web components that render RoxyAPI responses").
-
-**Widgets, for everyone else.** The same components in no-code mode. Copy one snippet, paste it into any surface that takes HTML, and a live reading renders in the browser with no backend and no build step. Works on Squarespace, Wix, Shopify, WordPress, Notion, and Linktree, either as a script tag or as a hosted embed URL for platforms that cannot run scripts. Browser-safe publishable keys carry an origin allowlist, so the key on the page is scoped to the sites you name. Gallery and copy-paste snippets: [roxyapi.com/widgets](https://roxyapi.com/widgets "RoxyAPI copy-paste astrology widgets: horoscopes, natal charts, Vedic kundli, human design, tarot and numerology embeds for any website, no code and no backend").
+**The domains compose, they do not merely coexist.** Human Design is computed from the Western ephemeris and the I Ching hexagram set, the Ayurvedic constitution is read from the Vedic birth chart, and Vastu griha pravesh dates are found over the same panchang. The sidereal and tropical engines are tested to return the same sky at zero tolerance. That is the capability single-domain vendors cannot be stitched into.
 
 ## Verified accuracy
 
@@ -207,22 +110,103 @@ Live component gallery and theming reference: [roxyapi.com/ui](https://roxyapi.c
   <img src="https://raw.githubusercontent.com/RoxyAPI/.github/main/profile/assets/verified.png" alt="Verified accuracy. Cross-checked against NASA JPL Horizons. Open methodology and public benchmark." width="100%">
 </a>
 
-Astronomy is the one place AI confidently lies. RoxyAPI treats accuracy as the moat, and publishes the evidence rather than asking to be trusted.
+Astronomy is the one place AI confidently invents answers. RoxyAPI publishes the evidence instead of asking to be trusted.
 
-- Powered by **Roxy Ephemeris**, built in house, reading the **NASA JPL DE440** ephemeris directly and verified against **NASA JPL Horizons DE441** as the physics ground truth.
-- **12,000+ automated tests run on every deploy**, including **3,000+ gold-standard tests** each pinned to a named external reference.
-- **A public, MIT-licensed benchmark anyone can clone, run, or point at any astrology API**: [RoxyAPI/astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark verified against NASA JPL Horizons DE441"). **Median deviation 0.05 arcseconds (0.00001 degrees)**, and the README is the one place the full results live: the per-body maxima, the percentiles and every reference value, with the script and the dataset to reproduce them.
-- The worst single point is published in the benchmark README, named rather than hidden. So is the Moon, which moves about 13 degrees a day and is therefore the direct test of whether timezone resolution is correct.
-- **Published methodology** with the full test corpus, tolerance thresholds, reference sources, and verification tables: [roxyapi.com/methodology](https://roxyapi.com/methodology "RoxyAPI methodology: test corpus, tolerances, named reference sources, and verification tables").
-- **Proof before you pay.** The playground at [roxyapi.com/api-reference](https://roxyapi.com/api-reference "RoxyAPI live playground returning real production responses from the typed OpenAPI specification, no signup required") returns real production responses, not fake sandbox data behind a signup, so you can audit accuracy and response shape first.
+- **Roxy Ephemeris**, built in house, reads the **NASA JPL DE440** ephemeris directly and is verified against **NASA JPL Horizons DE441**.
+- **13,000+ automated tests run on every deploy**, including **3,000+ gold-standard tests** each pinned to a named external reference.
+- **An open, MIT-licensed benchmark** anyone can clone and point at any astrology API: [astrology-api-benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "MIT licensed reproducible astrology API accuracy benchmark verified against NASA JPL Horizons DE441"). Median deviation **0.05 arcseconds (0.00001 degrees)**; its README holds the full results, the worst point named, and the script and dataset to reproduce them.
+- **Published methodology** with the test corpus, tolerances and reference sources per domain: [roxyapi.com/methodology](https://roxyapi.com/methodology "RoxyAPI methodology: test corpus, tolerances, named reference sources, and verification tables").
+- **Proof before you pay.** The [live playground](https://roxyapi.com/api-reference "RoxyAPI live playground returning real production responses from the typed OpenAPI specification, no signup required") returns real production responses with no signup.
 
-## Licensing, privacy, and data residency
+## Licensing, privacy and data residency
 
-- **No AGPL, no copyleft, no source disclosure.** The engine is built in house, not a wrapper over a 1990s AGPL desktop library, so nothing copyleft reaches your product. AGPL matters more than teams expect because its copyleft triggers on network access, and an API is a network service, which is why [Google bans AGPL dependencies company-wide](https://opensource.google/documentation/reference/using/agpl-policy "Google open source policy: AGPL licensed code may not be used at Google, the third party corroboration for why AGPL free matters"). The exposure most teams carry was never a decision. A package manager hands you the free path, so a team installs a copyleft wrapper, ships a network service, and inherits the obligation without reading it. That licence is a private contract with no public registry, so ask any provider for their position in writing, including us. Ours is published at [roxyapi.com/policy/license](https://roxyapi.com/policy/license "RoxyAPI commercial license: no AGPL, no copyleft, no per user royalties, full commercial terms on every plan").
-- **A commercial license on every plan.** Build and sell closed-source apps, keep your code private, ship to any app store, white label for clients, and pass the license audits that funding rounds and acquisitions run.
-- **Stateless by design.** No birth data, journals, or profiles are retained. Birth data that can qualify as GDPR Article 9 special category data is computed in memory and never lands in a database, so there is no store to breach and nothing to export or erase when a data subject request arrives. End user data stays in your stack, and the memory and personalization layer stays 100 percent yours. The MIT [ai-spiritual-companion](https://github.com/RoxyAPI/ai-spiritual-companion "MIT AI companion template that remembers every user, with pgvector semantic recall and the full reading history on a Supabase project the operator owns") template ships that layer ready to fork, on a database the operator owns.
-- **EU data residency and an Article 28 DPA on every plan.** Stored data stays in Germany, inside the EU, for every customer on every plan, so EU residency is the default rather than a regional upgrade. The processor contract, EU Standard Contractual Clauses, technical and organisational measures, a dated subprocessor register, and breach notification terms are all published, so procurement can review them without contacting us: [roxyapi.com/policy/dpa](https://roxyapi.com/policy/dpa "RoxyAPI self serve GDPR Article 28 Data Processing Addendum with EU Standard Contractual Clauses, technical and organisational measures, and a dated subprocessor register").
-- **MIT everywhere it is ours to give.** The SDKs, the UI component library, the templates, and the benchmark are all MIT licensed, with no attribution requirement and no upstream lock-in.
+- **No AGPL, no copyleft, no source disclosure.** The engine is built in house, so nothing copyleft reaches your product. AGPL copyleft triggers on network access and an API is a network service, which is why [Google bans AGPL dependencies company-wide](https://opensource.google/documentation/reference/using/agpl-policy "Google open source policy: AGPL licensed code may not be used at Google"). A package manager often hands teams a copyleft wrapper as the free path, and the obligation arrives unread. Ask any provider for their position in writing, including us; ours is at [roxyapi.com/policy/license](https://roxyapi.com/policy/license "RoxyAPI commercial license: no AGPL, no copyleft, no per user royalties, full commercial terms on every plan").
+- **A commercial license on every plan.** Ship closed-source apps to any app store, white label for clients, and pass the license audits that funding rounds and acquisitions run.
+- **Stateless by design.** Birth data is computed in memory and never written to a database, so there is no store to breach and nothing to erase when a data subject request arrives. Memory and personalization stay in your stack; the MIT [ai-spiritual-companion](https://github.com/RoxyAPI/ai-spiritual-companion "MIT AI companion template that remembers every user, on a database the operator owns") template ships that layer ready to fork.
+- **EU data residency and an Article 28 DPA on every plan.** Stored data stays in Germany for every customer, and the DPA, Standard Contractual Clauses, technical measures and a dated subprocessor register are published for procurement: [roxyapi.com/policy/dpa](https://roxyapi.com/policy/dpa "RoxyAPI self serve GDPR Article 28 Data Processing Addendum").
+- **Bring your own LLM.** No per-token markup and no hidden system prompt: your agent calls the tools, your model writes the reply in your voice.
+
+## How RoxyAPI compares
+
+Category-level, no names. Run these checks against any vendor, including us.
+
+| Capability | RoxyAPI | Legacy astrology APIs | DIY open source libraries |
+|---|---|---|---|
+| Domains under one key and one subscription | Yes, 18+ | No, priced per product | No, one library each |
+| One call returns a complete result | Yes | Often split across separately billed calls | Assembly required |
+| Flat request pricing, 1 request = 1 unit on REST and MCP | Yes | Varies, credit tables weight endpoints | Yes, self hosted |
+| New domains land inside the existing plan | Yes | No, new invoice | No, new build |
+| Hosted Remote MCP server per domain | Yes, plus a stdio package | Varies, local stdio wrappers | No, build your own |
+| Token-optimized agent responses | Yes, opt-in and lossless | Not offered | Not offered |
+| Automated tests published per deploy | Yes, 13,000+ with 3,000+ gold-standard | Not published | Yours to write |
+| Open benchmark anyone can re-run against any provider | Yes, MIT | No public artifact | Run it yourself |
+| Real production responses before you pay | Yes, no signup | Varies, signup or sandbox | Install first |
+| Typed SDKs generated from a live spec | Yes, 5 languages | Varies, hand-kept exports | Read the source |
+| Drop-in UI components and no-code widgets | Yes | No | No |
+| Interpretation text localized in 10+ languages | Yes | Varies, horoscopes mostly | No, numbers only |
+| Engine free of AGPL copyleft exposure | Yes | Varies, inherited from a wrapper | No, copyleft is common |
+| EU data residency with an Article 28 DPA on every plan | Yes | Varies, enterprise only | Yours to write |
+| Stateless, zero end-user data stored | Yes | Varies, accounts and logs | Yes, self hosted |
+
+**Honest footnote.** If you need exactly one domain, run your own servers and accept copyleft terms, a free library is cheaper. Everything else in this table is where RoxyAPI earns its keep.
+
+## Build with it
+
+**Typed SDKs**, generated from the live OpenAPI spec so they cannot drift. Each ships an AGENTS.md so coding assistants call RoxyAPI correctly.
+
+| Language | Package | Repository |
+|---|---|---|
+| TypeScript | `@roxyapi/sdk` | [sdk-typescript](https://github.com/RoxyAPI/sdk-typescript) |
+| Python | `roxy-sdk` | [sdk-python](https://github.com/RoxyAPI/sdk-python) |
+| PHP | `roxyapi/sdk` | [sdk-php](https://github.com/RoxyAPI/sdk-php) |
+| C# and .NET | `RoxyApi.Sdk` | [sdk-dotnet](https://github.com/RoxyAPI/sdk-dotnet) |
+| Go | `github.com/RoxyAPI/sdk-go` | [sdk-go](https://github.com/RoxyAPI/sdk-go) |
+
+[![npm](https://img.shields.io/npm/v/@roxyapi/sdk?style=flat-square&logo=npm&label=%40roxyapi%2Fsdk)](https://www.npmjs.com/package/@roxyapi/sdk)
+[![PyPI](https://img.shields.io/pypi/v/roxy-sdk?style=flat-square&logo=pypi&logoColor=white&label=roxy-sdk)](https://pypi.org/project/roxy-sdk/)
+[![Packagist](https://img.shields.io/packagist/v/roxyapi/sdk?style=flat-square&logo=packagist&logoColor=white&label=roxyapi%2Fsdk)](https://packagist.org/packages/roxyapi/sdk)
+[![NuGet](https://img.shields.io/nuget/v/RoxyApi.Sdk?style=flat-square&logo=nuget&logoColor=white&label=RoxyApi.Sdk)](https://www.nuget.org/packages/RoxyApi.Sdk)
+[![Go module](https://img.shields.io/github/v/tag/RoxyAPI/sdk-go?style=flat-square&logo=go&logoColor=white&label=sdk-go)](https://pkg.go.dev/github.com/RoxyAPI/sdk-go)
+[![MCP](https://img.shields.io/npm/v/@roxyapi/mcp?style=flat-square&logo=npm&label=%40roxyapi%2Fmcp)](https://www.npmjs.com/package/@roxyapi/mcp)
+
+**The OpenAPI spec as a repository.** [astrology-api-openapi](https://github.com/RoxyAPI/astrology-api-openapi "RoxyAPI OpenAPI 3.1 specification, refreshed daily from production") holds the full OpenAPI 3.1 specification, refreshed daily from production. Import it into Postman, Insomnia or Bruno, or generate a client in any language. Ready-made [Postman collections](https://github.com/RoxyAPI/postman-collections "RoxyAPI Postman collections for every domain, generated from the live OpenAPI specification") are generated from it.
+
+**Roxy UI, for developers.** Drop-in components render the API response for you: natal wheels, synastry charts, Vedic kundli, KP charts, dasha timelines, panchang tables, shadbala grids, Human Design bodygraphs, tarot spreads, numerology cards, hexagrams, biorhythm curves and astrocartography maps. Themed with CSS custom properties, typed from the spec, MIT licensed. Live gallery: [roxyapi.com/ui](https://roxyapi.com/ui "Roxy UI live component gallery").
+
+| Framework | Package |
+|---|---|
+| Web components, any framework or none | [`@roxyapi/ui`](https://www.npmjs.com/package/@roxyapi/ui) |
+| React and Next.js | [`@roxyapi/ui-react`](https://www.npmjs.com/package/@roxyapi/ui-react) |
+| Vue and Nuxt | [`@roxyapi/ui-vue`](https://www.npmjs.com/package/@roxyapi/ui-vue) |
+
+Single-component starters: [natal-chart-wheel](https://github.com/RoxyAPI/natal-chart-wheel "Natal chart wheel web component: planets, houses and aspects from a birth date, time and city"), [kundli-chart](https://github.com/RoxyAPI/kundli-chart "Kundli chart web component: North, South and East Indian Vedic birth chart from birth data") and [human-design-bodygraph](https://github.com/RoxyAPI/human-design-bodygraph "Human Design bodygraph web component: centers, channels, gates, type, authority and profile").
+
+**Widgets, for everyone else.** The same components in no-code mode: paste one snippet into Squarespace, Wix, Shopify, WordPress, Notion or Linktree and a live reading renders with no backend. Browser-safe publishable keys are scoped to the sites you name. Gallery and snippets: [roxyapi.com/widgets](https://roxyapi.com/widgets "RoxyAPI copy-paste astrology widgets for any website, no code and no backend").
+
+**No-code and automation.** The [WordPress plugin](https://wordpress.org/plugins/roxyapi/ "RoxyAPI WordPress plugin on WordPress.org: Gutenberg blocks and shortcodes") ([sdk-wordpress](https://github.com/RoxyAPI/sdk-wordpress)) adds Gutenberg blocks and shortcodes. The [n8n node](https://github.com/RoxyAPI/n8n-nodes-roxyapi "RoxyAPI n8n community node: every domain as an n8n resource, usable as an AI Agent tool") puts every domain into n8n workflows and its AI Agent, and [n8n-astrology-ai-agent](https://github.com/RoxyAPI/n8n-astrology-ai-agent "Import-ready n8n astrology AI agent workflow") is an import-ready chat agent built on it.
+
+## Templates
+
+Open source, MIT licensed apps you can fork, rebrand and ship as your own product:
+
+- [astrology-ai-chatbot](https://github.com/RoxyAPI/astrology-ai-chatbot): flagship multi-MCP AI astrology assistant. Discovers the tool catalog over Remote MCP, draws every tool result as a chart, spread or bodygraph beside the reply, works with any LLM.
+- [ai-spiritual-companion](https://github.com/RoxyAPI/ai-spiritual-companion): an AI companion that remembers every user, with semantic recall, full reading history and accounts with row level security on a database the operator owns.
+- [spiritual-practitioner-website-template](https://github.com/RoxyAPI/spiritual-practitioner-website-template): a complete white-label website for an astrologer, tarot reader or numerologist. Edit one config file, deploy.
+- [spiritual-ai-voice-assistant](https://github.com/RoxyAPI/spiritual-ai-voice-assistant): voice-driven spiritual assistant with an embeddable widget.
+- [jyotish-vedic-astrology-app](https://github.com/RoxyAPI/jyotish-vedic-astrology-app): Jyotish web app with kundli, panchang, Gun Milan and dasha.
+- [astrology-supabase-starter](https://github.com/RoxyAPI/astrology-supabase-starter): the backend on its own, Edge Functions plus a Postgres cache, for teams that already have a front end.
+- Mobile starters for React Native and Expo: [astrology](https://github.com/RoxyAPI/astrology-starter-app), [vedic astrology](https://github.com/RoxyAPI/vedic-astrology-starter-app), [numerology](https://github.com/RoxyAPI/numerology-starter-app), [tarot](https://github.com/RoxyAPI/tarot-starter-app), [dreams](https://github.com/RoxyAPI/dreams-starter-app).
+
+Gallery with screenshots and one-click deploys: [roxyapi.com/templates](https://roxyapi.com/templates "Open source MIT licensed RoxyAPI templates you can clone and white label").
+
+## Per-endpoint code samples
+
+One small repository per high-demand capability, each with runnable TypeScript, JavaScript and Python samples against the live API:
+
+- **Western:** [natal-chart-api](https://github.com/RoxyAPI/natal-chart-api), [daily-horoscope-api](https://github.com/RoxyAPI/daily-horoscope-api), [synastry-api](https://github.com/RoxyAPI/synastry-api), [astrology-compatibility-api](https://github.com/RoxyAPI/astrology-compatibility-api), [transit-forecast-api](https://github.com/RoxyAPI/transit-forecast-api), [moon-phase-api](https://github.com/RoxyAPI/moon-phase-api)
+- **Vedic and KP:** [kundli-api](https://github.com/RoxyAPI/kundli-api), [kundli-matching-api](https://github.com/RoxyAPI/kundli-matching-api), [panchang-api](https://github.com/RoxyAPI/panchang-api), [dasha-api](https://github.com/RoxyAPI/dasha-api), [kp-astrology-api](https://github.com/RoxyAPI/kp-astrology-api)
+- **Chinese astrology and feng shui:** [bazi-api](https://github.com/RoxyAPI/bazi-api), [chinese-lunar-calendar-api](https://github.com/RoxyAPI/chinese-lunar-calendar-api), [chinese-almanac-api](https://github.com/RoxyAPI/chinese-almanac-api), [feng-shui-flying-stars-api](https://github.com/RoxyAPI/feng-shui-flying-stars-api), [kua-number-api](https://github.com/RoxyAPI/kua-number-api), [tai-sui-api](https://github.com/RoxyAPI/tai-sui-api)
+- **More domains:** [human-design-api](https://github.com/RoxyAPI/human-design-api), [numerology-api](https://github.com/RoxyAPI/numerology-api), [tarot-api](https://github.com/RoxyAPI/tarot-api), [biorhythm-api](https://github.com/RoxyAPI/biorhythm-api)
 
 ## Track record
 
@@ -230,89 +214,59 @@ Newer than the incumbents, and further along than that usually implies.
 
 | When | What |
 |---|---|
-| 2020 | Groundwork begins on the in-house Roxy Ephemeris engine, four years before launch, built for APIs and agents from the start |
+| 2020 | Groundwork begins on the in-house Roxy Ephemeris engine, built for APIs and agents from the start |
 | 2024 | The platform opens to the public |
 | March 2025 | Cumulative production traffic crosses 1 million API requests |
 | March 2026 | Production traffic reaches a run rate of 10 million requests per quarter |
-| May 2026 | About 200,000 calls per month arrive from AI agents over Remote MCP, a share still growing weekly |
-| September 2026 | Roxy Ephemeris reads the NASA JPL DE440 ephemeris directly, and the open benchmark median is 0.05 arcseconds (0.00001 degrees) on the same dataset and script |
+| May 2026 | About 200,000 calls per month arrive from AI agents over Remote MCP |
+| September 2026 | Roxy Ephemeris reads the NASA JPL DE440 ephemeris directly; the open benchmark median is 0.05 arcseconds |
 
 RoxyAPI is independently operated, and every number on this page is one you can check.
 
-## Free Templates
+## Questions developers ask before integrating
 
-Open-source templates, all MIT licensed, that wrap RoxyAPI into a working app you can fork, rebrand, and ship as your own product:
+**What is the best astrology API for AI agents?**
+Pick on what an agent needs: a hosted MCP server it can call with no local install, typed tools generated from a real spec, verified numbers, and one key across every domain a conversation can wander into. RoxyAPI ships a Remote MCP server per domain, a stdio package for local-only clients, 258+ typed tools and an open benchmark, so you can check each claim before you commit.
 
-- [astrology-ai-chatbot](https://github.com/RoxyAPI/astrology-ai-chatbot): flagship multi-MCP AI astrology assistant. Auto-discovers the tool catalog over Remote MCP, renders every tool result as a chart, spread, or bodygraph beside the reply ([how it does it](https://github.com/RoxyAPI/astrology-ai-chatbot#widgets-from-tool-calls "The template README section on widgets from tool calls, with screenshots and the two files that do it")), multi-LLM, deploys in under 30 minutes.
-- [ai-spiritual-companion](https://github.com/RoxyAPI/ai-spiritual-companion): the second flagship, an AI companion that remembers every user. pgvector semantic recall, the full reading history, Supabase accounts with row level security, and a natal chart computed once, kept, and drawn as a wheel, grounded over Remote MCP with compact responses. Every tool result renders as a card or chart beside the reply ([how it does it](https://github.com/RoxyAPI/ai-spiritual-companion#can-the-companion-show-a-chart-instead-of-describing-it "The template README section on drawn tool results, with screenshots and the two files that do it")). The memory layer lives in the operator stack, which makes it the natural premium feature to build plans on.
-- [spiritual-practitioner-website-template](https://github.com/RoxyAPI/spiritual-practitioner-website-template): a complete white-label website for a working astrologer, tarot reader, or numerologist. Free readings on your own domain, bookings, blog, prices, four palettes. Edit one config file, deploy, done. The self-hosted alternative to renting a page builder.
-- [spiritual-ai-voice-assistant](https://github.com/RoxyAPI/spiritual-ai-voice-assistant): voice-driven spiritual assistant with an embeddable widget
-- [jyotish-vedic-astrology-app](https://github.com/RoxyAPI/jyotish-vedic-astrology-app): Jyotish web app with kundli, panchang, Gun Milan, and dasha, built on the drop-in UI components
-- [astrology-supabase-starter](https://github.com/RoxyAPI/astrology-supabase-starter "MIT Supabase backend template serving astrology readings from Edge Functions with a Postgres cache and row level security"): the backend on its own, for teams that already have a front end. Two Edge Functions call the API from Deno with no build step, the shared daily reading is cached in your own Postgres so one upstream call serves every visitor that day, and a saved chart is private to the person who asked for it under row level security. The key stays a project secret read in one file. Deploys in three commands.
-- [astrology-starter-app](https://github.com/RoxyAPI/astrology-starter-app): Western astrology baseline for React Native and Expo
-- [vedic-astrology-starter-app](https://github.com/RoxyAPI/vedic-astrology-starter-app): Vedic and KP focused
-- [numerology-starter-app](https://github.com/RoxyAPI/numerology-starter-app): Life Path, master numbers, karmic debt
-- [tarot-starter-app](https://github.com/RoxyAPI/tarot-starter-app): tarot reader with seeded draws
-- [dreams-starter-app](https://github.com/RoxyAPI/dreams-starter-app): dream journal with interpretation
+**Is RoxyAPI just an astrology API?**
+No. Astrology is one of 18+ distinct domains on the same key. One system counts once, so the total reads smaller than a padded catalog and delivers more per call.
 
-Full gallery with screenshots and one-click deploys: [roxyapi.com/templates](https://roxyapi.com/templates "Free MIT licensed RoxyAPI templates: AI chatbot, practitioner website, Vedic kundli, numerology, tarot, and dream apps you can clone and white label").
+**Should I build this myself?**
+You can compute a chart yourself, but a production offering is ongoing engineering: accuracy kept verified against NASA JPL Horizons, 18+ domains, interpretations in 10+ languages, Remote MCP, typed SDKs, UI components and the uptime behind all of it. Licensing comes first: the free path is often a copyleft wrapper, and copyleft triggers on network access. If you need exactly one domain and can self-host, a library is cheaper, and we say so.
 
-## Per-endpoint code samples
+**Do you use Swiss Ephemeris?**
+No. RoxyAPI runs Roxy Ephemeris, an in-house engine that reads the NASA JPL DE440 ephemeris directly and is verified against NASA JPL Horizons DE441. There is no copyleft obligation to inherit and no commercial ephemeris license to renew.
 
-Prefer a single working file over a tour of the docs? This org also publishes one small repository per high-demand capability, each with runnable request and response samples: [kundli-api](https://github.com/RoxyAPI/kundli-api), [panchang-api](https://github.com/RoxyAPI/panchang-api), [natal-chart-api](https://github.com/RoxyAPI/natal-chart-api), [daily-horoscope-api](https://github.com/RoxyAPI/daily-horoscope-api), [kundli-matching-api](https://github.com/RoxyAPI/kundli-matching-api), [kp-astrology-api](https://github.com/RoxyAPI/kp-astrology-api), [dasha-api](https://github.com/RoxyAPI/dasha-api), [synastry-api](https://github.com/RoxyAPI/synastry-api), [astrology-compatibility-api](https://github.com/RoxyAPI/astrology-compatibility-api), [transit-forecast-api](https://github.com/RoxyAPI/transit-forecast-api), [human-design-api](https://github.com/RoxyAPI/human-design-api), [moon-phase-api](https://github.com/RoxyAPI/moon-phase-api), [numerology-api](https://github.com/RoxyAPI/numerology-api), [tarot-api](https://github.com/RoxyAPI/tarot-api), and [biorhythm-api](https://github.com/RoxyAPI/biorhythm-api).
+**How do I know the calculations are right?**
+Clone the [MIT benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "Reproducible MIT licensed accuracy benchmark for any astrology API"), run it against RoxyAPI, then against any other provider. The methodology page publishes the corpus, tolerances and reference sources behind every domain.
+
+**What does it cost to add a domain?**
+Nothing. Every plan includes every domain, every endpoint, Remote MCP, the SDKs, the UI components, the widgets and the 10+ interpretation languages, and new domains join the plan you already have.
+
+**Can I use it in a closed-source commercial product?**
+Yes. Every plan is a commercial license with no copyleft and no per-user royalties. The MIT templates and UI components can ship under your own brand.
+
+**Where is the data stored?**
+Nothing about your end users is kept: birth data is computed in memory and never written to a database. Operational data stays in Germany on every plan, under published Article 28 terms.
 
 ## Quick links
 
 | Surface | URL |
 |---|---|
 | Live API playground | https://roxyapi.com/api-reference |
-| Documentation and guides | https://roxyapi.com/docs |
+| Documentation | https://roxyapi.com/docs |
 | Remote MCP setup | https://roxyapi.com/docs/mcp |
 | Pricing | https://roxyapi.com/pricing |
-| Methodology and accuracy | https://roxyapi.com/methodology |
+| Methodology | https://roxyapi.com/methodology |
 | Transparency report | https://roxyapi.com/transparency |
-| Public benchmark (open, MIT) | https://github.com/RoxyAPI/astrology-api-benchmark |
-| UI component gallery | https://roxyapi.com/ui |
-| No-code widgets | https://roxyapi.com/widgets |
-| Free templates | https://roxyapi.com/templates |
-| Commercial license | https://roxyapi.com/policy/license |
-| Data processing addendum | https://roxyapi.com/policy/dpa |
 | Changelog | https://roxyapi.com/changelog |
 | OpenAPI specification | https://roxyapi.com/api/v2/openapi.json |
 | Agent discovery | https://roxyapi.com/llms.txt |
 
-## Questions developers ask before integrating
-
-**Is RoxyAPI just an astrology API?**
-No. Astrology is one of 18+ distinct domains on the same key, alongside Vedic and KP astrology, forecast timelines, Human Design, Chinese astrology, feng shui, Mesoamerican astrology, Vastu, numerology, Kabbalah, tarot, biorhythm, Ayurveda, I Ching, crystals, dream interpretation, angel numbers, and location and timezone resolution. Counting honestly means one system counts once, so the total reads smaller than a padded catalog and delivers more per call.
-
-**Should I just build this myself?**
-You can compute a chart yourself, but a production offering is ongoing engineering: accuracy verified against NASA JPL Horizons and kept verified, 18+ domains on one key, interpretations in 10+ languages, Remote MCP, typed SDKs, UI components and widgets, and the uptime and support behind all of it. Licensing comes first: the free path most package managers hand you is a copyleft wrapper, and copyleft triggers on network access. If you need exactly one domain and can self-host, a library is cheaper, and we say so.
-
-**Do you use Swiss Ephemeris?**
-No. RoxyAPI runs Roxy Ephemeris, an in-house engine that reads the NASA JPL DE440 ephemeris directly and is verified against NASA JPL Horizons DE441. Nothing AGPL reaches your product, so there is no copyleft obligation to inherit and no commercial ephemeris license to verify or renew.
-
-**How do I know the calculations are right?**
-Do not take our word for it. Clone the [MIT benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "Reproducible MIT licensed accuracy benchmark for any astrology API, verified against NASA JPL Horizons DE441"), run it against RoxyAPI, then run it against any other provider. It checks planet positions against NASA JPL Horizons DE441 and prints the deviations, and its README publishes every run. The methodology page publishes the corpus, the tolerances, and the reference sources behind every domain.
-
-**What does it cost to add a domain?**
-Nothing. Every plan includes every domain, every endpoint, Remote MCP, the SDKs, the UI components, the widgets, and the 10+ interpretation languages. One request equals one quota unit whether it arrives over REST or MCP, with no credit weighting and no premium endpoint surcharges, and new domains join the plan you already have.
-
-**Can I use it in a closed-source commercial product?**
-Yes. Every plan is a commercial license with no copyleft and no per-user royalties, so you can keep your source private, ship to any app store, and white label for clients. The MIT templates and UI components can be cloned and shipped under your own brand.
-
-**Where is the data stored, and what do you keep?**
-Nothing about your end users. RoxyAPI is stateless, so birth data is computed in memory and never written to a database. What is stored operationally stays in Germany, inside the EU, on every plan, and the Article 28 processor terms are published for procurement to read without contacting us.
-
 ## Get started
 
-1. Grab a key at [roxyapi.com/pricing](https://roxyapi.com/pricing "RoxyAPI plans and quotas: every domain included on every plan, instant activation"). Every plan includes every domain.
-2. Try the live playground at [roxyapi.com/api-reference](https://roxyapi.com/api-reference "RoxyAPI live playground with real production responses and no signup").
-3. Install an SDK, paste a widget, or point your MCP client at one of the endpoints above.
-4. Ship.
+1. Get a key at [roxyapi.com/pricing](https://roxyapi.com/pricing "RoxyAPI plans and quotas: every domain included on every plan, instant activation"). Every plan includes every domain.
+2. Try the [live playground](https://roxyapi.com/api-reference "RoxyAPI live playground with real production responses and no signup").
+3. Install an SDK, paste a widget, or point your agent at a Remote MCP server.
 
-## Contact
-
-Questions, integration help, or partnership inquiries: [roxyapi.com/contact](https://roxyapi.com/contact "Contact RoxyAPI for integration help, procurement questions, or partnership inquiries").
-
-Built by [Roxy Labs](https://roxyapi.com). The Stripe of insight APIs.
+Questions or partnerships: [roxyapi.com/contact](https://roxyapi.com/contact "Contact RoxyAPI for integration help, procurement questions, or partnership inquiries"). Built by [Roxy Labs](https://roxyapi.com). The Stripe of insight APIs.
