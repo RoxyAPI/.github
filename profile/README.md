@@ -79,7 +79,7 @@ Client setup, authentication and every config format: [roxyapi.com/docs/mcp](htt
 }
 ```
 
-**Coding agents** (GitHub Copilot, Claude Code, Cursor, Codex, Gemini CLI) use the keyless docs server at `https://roxyapi.com/mcp/docs`. Its one tool, `search_docs`, searches every endpoint, parameter, SDK call and guide, so the agent wires the integration with the right field names the first time. RoxyAPI is also a one-step [Claude Code plugin](https://github.com/RoxyAPI/claude-plugin "RoxyAPI Claude Code plugin and marketplace: bundles the keyless docs MCP server and a skill in one install").
+**Coding agents** (GitHub Copilot, Claude Code, Cursor, Codex, Gemini CLI) use the keyless docs server at `https://roxyapi.com/mcp/docs`. Its one tool, `search_docs`, searches every endpoint, parameter, SDK call and guide, so the agent wires the integration with the right field names the first time. RoxyAPI is also a one-step [plugin for Claude Code and Cursor](https://github.com/RoxyAPI/agent-plugin "RoxyAPI agent plugin for Claude Code, Cursor and Agent Plugins clients: bundles the keyless docs MCP server and a skill in one install").
 
 **Lower inference cost, same data.** Pass `compact: true` on any tool call for a lossless, token-optimized response: arrays of same-shaped rows travel columnar, so a field name is sent once instead of once per row. About 40 percent fewer tokens on a natal chart, about 52 percent on astrocartography. Your quota is unchanged, because 1 request stays 1 unit.
 
