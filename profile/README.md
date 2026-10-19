@@ -4,7 +4,7 @@
 
 # RoxyAPI
 
-**RoxyAPI is the data layer for insight, belief and prediction apps: one Astrology API key for all 18+ insight domains, with a hosted astrology MCP server for every domain.** Western and Vedic astrology, forecast, Human Design, Chinese astrology, feng shui, Mesoamerican astrology, Vastu, numerology, Kabbalah, tarot, biorhythm, Ayurveda, I Ching, crystals, dreams, angel numbers and location, through one REST API, typed SDKs in five languages, and Remote MCP. Calculations read the NASA JPL DE440 ephemeris directly and are verified against NASA JPL Horizons. One request is one unit on every endpoint, nothing AGPL sits anywhere in the stack, and every plan includes every domain.
+**RoxyAPI is the data layer for insight, belief and prediction apps: one Astrology API key for all 18+ insight domains, with a hosted astrology MCP server for every domain.** Western and Vedic astrology, forecast, Human Design, Chinese astrology, feng shui, Mesoamerican astrology, Vastu, numerology, Kabbalah, tarot, biorhythm, Ayurveda, I Ching, crystals, dreams, angel numbers and location, through one REST API, typed SDKs, and Remote MCP. Calculations read the NASA JPL DE440 ephemeris directly and are verified against NASA JPL Horizons. One request is one unit on every endpoint, nothing AGPL sits anywhere in the stack, and every plan includes every domain.
 
 The Spiritual OS layer for agentic AI. Your app and your agents plug in; your model, your prompt and your users stay yours.
 
@@ -27,7 +27,7 @@ The Spiritual OS layer for agentic AI. Your app and your agents plug in; your mo
 | Automated tests per deploy | 13,000+, including 3,000+ gold-standard tests pinned to named external references |
 | Median deviation from NASA JPL Horizons DE441 | 0.05 arcseconds (0.00001 degrees), in an open MIT benchmark you can re-run |
 | Interpretation languages | 10+ via one query parameter, included in every plan |
-| Typed SDKs | TypeScript, Python, PHP, C# and Go, plus a WordPress plugin and an n8n node |
+| Typed SDKs | TypeScript, Python, PHP, C#, Go and Rust, plus a WordPress plugin and an n8n node |
 | Pricing | 1 request = 1 unit on REST and MCP alike, no credit weighting. From 39 USD per month for every domain, as low as 1.80 USD per domain on annual billing |
 | Median response time | Under 50 ms |
 | Uptime | Reported on an [independent status page](https://stats.uptimerobot.com/T0kPZKlAjf "Live RoxyAPI uptime on UptimeRobot, an independently hosted third party status page") we cannot edit, against a 99.95 percent SLA |
@@ -128,7 +128,7 @@ Astronomy is the one place AI confidently invents answers. RoxyAPI publishes the
 
 ## How RoxyAPI compares
 
-Category-level, no names. Run these checks against any vendor, including us.
+Run these checks against any vendor, including us.
 
 | Capability | RoxyAPI | Legacy astrology APIs | DIY open source libraries |
 |---|---|---|---|
@@ -141,7 +141,7 @@ Category-level, no names. Run these checks against any vendor, including us.
 | Automated tests published per deploy | Yes, 13,000+ with 3,000+ gold-standard | Not published | Yours to write |
 | Open benchmark anyone can re-run against any provider | Yes, MIT | No public artifact | Run it yourself |
 | Real production responses before you pay | Yes, no signup | Varies, signup or sandbox | Install first |
-| Typed SDKs generated from a live spec | Yes, 5 languages | Varies, hand-kept exports | Read the source |
+| Typed SDKs generated from a live spec | Yes, native packages with AGENTS.md | Varies, hand-kept exports | Read the source |
 | Drop-in UI components and no-code widgets | Yes | No | No |
 | Interpretation text localized in 10+ languages | Yes | Varies, horoscopes mostly | No, numbers only |
 | Engine free of AGPL copyleft exposure | Yes | Varies, inherited from a wrapper | No, copyleft is common |
@@ -161,12 +161,14 @@ Category-level, no names. Run these checks against any vendor, including us.
 | PHP | `roxyapi/sdk` | [sdk-php](https://github.com/RoxyAPI/sdk-php) |
 | C# and .NET | `RoxyApi.Sdk` | [sdk-dotnet](https://github.com/RoxyAPI/sdk-dotnet) |
 | Go | `github.com/RoxyAPI/sdk-go` | [sdk-go](https://github.com/RoxyAPI/sdk-go) |
+| Rust | [`roxyapi`](https://crates.io/crates/roxyapi) | [sdk-rust](https://github.com/RoxyAPI/sdk-rust) |
 
 [![npm](https://img.shields.io/npm/v/@roxyapi/sdk?style=flat-square&logo=npm&label=%40roxyapi%2Fsdk)](https://www.npmjs.com/package/@roxyapi/sdk)
 [![PyPI](https://img.shields.io/pypi/v/roxy-sdk?style=flat-square&logo=pypi&logoColor=white&label=roxy-sdk)](https://pypi.org/project/roxy-sdk/)
 [![Packagist](https://img.shields.io/packagist/v/roxyapi/sdk?style=flat-square&logo=packagist&logoColor=white&label=roxyapi%2Fsdk)](https://packagist.org/packages/roxyapi/sdk)
 [![NuGet](https://img.shields.io/nuget/v/RoxyApi.Sdk?style=flat-square&logo=nuget&logoColor=white&label=RoxyApi.Sdk)](https://www.nuget.org/packages/RoxyApi.Sdk)
 [![Go module](https://img.shields.io/github/v/tag/RoxyAPI/sdk-go?style=flat-square&logo=go&logoColor=white&label=sdk-go)](https://pkg.go.dev/github.com/RoxyAPI/sdk-go)
+[![crates.io](https://img.shields.io/crates/v/roxyapi?style=flat-square&logo=rust&logoColor=white&label=roxyapi)](https://crates.io/crates/roxyapi)
 [![MCP](https://img.shields.io/npm/v/@roxyapi/mcp?style=flat-square&logo=npm&label=%40roxyapi%2Fmcp)](https://www.npmjs.com/package/@roxyapi/mcp)
 
 **The OpenAPI spec as a repository.** [astrology-api-openapi](https://github.com/RoxyAPI/astrology-api-openapi "RoxyAPI OpenAPI 3.1 specification, refreshed daily from production") holds the full OpenAPI 3.1 specification, refreshed daily from production. Import it into Postman, Insomnia or Bruno, or generate a client in any language. Ready-made [Postman collections](https://github.com/RoxyAPI/postman-collections "RoxyAPI Postman collections for every domain, generated from the live OpenAPI specification") are generated from it.
