@@ -156,11 +156,11 @@ Run these checks against any vendor, including us.
 
 | Language | Package | Repository |
 |---|---|---|
-| TypeScript | `@roxyapi/sdk` | [sdk-typescript](https://github.com/RoxyAPI/sdk-typescript) |
-| Python | `roxy-sdk` | [sdk-python](https://github.com/RoxyAPI/sdk-python) |
-| PHP | `roxyapi/sdk` | [sdk-php](https://github.com/RoxyAPI/sdk-php) |
-| C# and .NET | `RoxyApi.Sdk` | [sdk-dotnet](https://github.com/RoxyAPI/sdk-dotnet) |
-| Go | `github.com/RoxyAPI/sdk-go` | [sdk-go](https://github.com/RoxyAPI/sdk-go) |
+| TypeScript | [`@roxyapi/sdk`](https://www.npmjs.com/package/@roxyapi/sdk) | [sdk-typescript](https://github.com/RoxyAPI/sdk-typescript) |
+| Python | [`roxy-sdk`](https://pypi.org/project/roxy-sdk/) | [sdk-python](https://github.com/RoxyAPI/sdk-python) |
+| PHP | [`roxyapi/sdk`](https://packagist.org/packages/roxyapi/sdk) | [sdk-php](https://github.com/RoxyAPI/sdk-php) |
+| C# and .NET | [`RoxyApi.Sdk`](https://www.nuget.org/packages/RoxyApi.Sdk) | [sdk-dotnet](https://github.com/RoxyAPI/sdk-dotnet) |
+| Go | [`github.com/RoxyAPI/sdk-go`](https://pkg.go.dev/github.com/RoxyAPI/sdk-go) | [sdk-go](https://github.com/RoxyAPI/sdk-go) |
 | Rust | [`roxyapi`](https://crates.io/crates/roxyapi) | [sdk-rust](https://github.com/RoxyAPI/sdk-rust) |
 
 [![npm](https://img.shields.io/npm/v/@roxyapi/sdk?style=flat-square&logo=npm&label=%40roxyapi%2Fsdk)](https://www.npmjs.com/package/@roxyapi/sdk)
