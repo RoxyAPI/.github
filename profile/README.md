@@ -149,8 +149,6 @@ Run these checks against any vendor, including us.
 | EU data residency with an Article 28 DPA on every plan | Yes | Varies, enterprise only | Yours to write |
 | Stateless, zero end-user data stored | Yes | Varies, accounts and logs | Yes, self hosted |
 
-**Honest footnote.** If you need exactly one domain, run your own servers and accept copyleft terms, a free library is cheaper. Everything else in this table is where RoxyAPI earns its keep.
-
 ## Build with it
 
 **Typed SDKs**, generated from the live OpenAPI spec so they cannot drift. Each ships an AGENTS.md so coding assistants call RoxyAPI correctly.
@@ -240,7 +238,7 @@ Pick on what an agent needs: a hosted MCP server it can call with no local insta
 No. Astrology is one of 18+ distinct domains on the same key. One system counts once, so the total reads smaller than a padded catalog and delivers more per call.
 
 **Should I build this myself?**
-You can compute a chart yourself, but a production offering is ongoing engineering: accuracy kept verified against NASA JPL Horizons, 18+ domains, interpretations in 10+ languages, Remote MCP, typed SDKs, UI components and the uptime behind all of it. Licensing comes first: the free path is often a copyleft wrapper, and copyleft triggers on network access. If you need exactly one domain and can self-host, a library is cheaper, and we say so.
+You can compute a chart yourself, but a production offering is ongoing engineering: accuracy kept verified against NASA JPL Horizons, 18+ domains, interpretations in 10+ languages, Remote MCP, typed SDKs, UI components and the uptime behind all of it. Licensing comes first: the free path is often a copyleft wrapper, and copyleft triggers on network access.
 
 **Do you use Swiss Ephemeris?**
 No. RoxyAPI runs Roxy Ephemeris, an in-house engine that reads the NASA JPL DE440 ephemeris directly and is verified against NASA JPL Horizons DE441. There is no copyleft obligation to inherit and no commercial ephemeris license to renew.
