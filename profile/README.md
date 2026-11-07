@@ -16,6 +16,7 @@ The Spiritual OS layer for agentic AI. Your app and your agents plug in; your mo
 [![Pricing](https://img.shields.io/badge/Pricing-Plans_%26_quotas-0ea5e9?style=flat-square)](https://roxyapi.com/pricing)
 [![Templates](https://img.shields.io/badge/Templates-MIT_licensed-8b5cf6?style=flat-square)](https://roxyapi.com/templates)
 [![Widgets](https://img.shields.io/badge/Widgets-No_code_embeds-14b8a6?style=flat-square)](https://roxyapi.com/widgets)
+[![Reports](https://img.shields.io/badge/Reports-Branded_PDF-f43f5e?style=flat-square)](https://roxyapi.com/reports)
 
 ## RoxyAPI at a glance
 
@@ -28,7 +29,7 @@ The Spiritual OS layer for agentic AI. Your app and your agents plug in; your mo
 | Median deviation from NASA JPL Horizons DE441 | 0.05 arcseconds (0.00001 degrees), in an open MIT benchmark you can re-run |
 | Interpretation languages | 10+ via one query parameter, included in every plan |
 | Typed SDKs | TypeScript, Python, PHP, C#, Go, Rust and Dart, plus a WordPress plugin and an n8n node |
-| Pricing | 1 request = 1 unit on REST and MCP alike, no credit weighting. From 39 USD per month for every domain, as low as 1.80 USD per domain on annual billing |
+| Pricing | 1 request = 1 unit on every data endpoint, REST and MCP alike, no credit weighting. From 39 USD per month for every domain, as low as 1.80 USD per domain on annual billing |
 | Median response time | Under 50 ms |
 | Uptime | Reported on an [independent status page](https://stats.uptimerobot.com/T0kPZKlAjf "Live RoxyAPI uptime on UptimeRobot, an independently hosted third party status page") we cannot edit, against a 99.95 percent SLA |
 | Data at rest | Germany, inside the EU, on every plan |
@@ -187,6 +188,8 @@ Single-component starters: [natal-chart-wheel](https://github.com/RoxyAPI/natal-
 
 **Widgets, for everyone else.** The same components in no-code mode: paste one snippet into Squarespace, Wix, Shopify, WordPress, Notion or Linktree and a live reading renders with no backend. Browser-safe publishable keys are scoped to the sites you name. Gallery and snippets: [roxyapi.com/widgets](https://roxyapi.com/widgets "RoxyAPI copy-paste astrology widgets for any website, no code and no backend").
 
+**Branded reports, ready to sell.** Natal chart, kundli, Human Design, BaZi, numerology and more as a print-ready PDF, self-contained HTML or Markdown, under your name, logo, colours, font and footer, on every plan. One call per report from the API, or paste the report widget and sell with no code: [roxyapi.com/reports](https://roxyapi.com/reports "RoxyAPI branded reports: white-label PDF, HTML and Markdown readings under your brand").
+
 **No-code and automation.** The [WordPress plugin](https://wordpress.org/plugins/roxyapi/ "RoxyAPI WordPress plugin on WordPress.org: Gutenberg blocks and shortcodes") ([sdk-wordpress](https://github.com/RoxyAPI/sdk-wordpress)) adds Gutenberg blocks and shortcodes. The [n8n node](https://github.com/RoxyAPI/n8n-nodes-roxyapi "RoxyAPI n8n community node: every domain as an n8n resource, usable as an AI Agent tool") puts every domain into n8n workflows and its AI Agent, and [n8n-ai-astrology-chatbot](https://github.com/RoxyAPI/n8n-ai-astrology-chatbot "Import-ready n8n AI astrology chatbot workflow: multi-agent readings on web chat and Telegram") is an import-ready multi-agent AI astrology reader built on it, with six specialist agents, saved birth profiles and daily forecasts.
 
 ## Templates
@@ -224,6 +227,7 @@ Newer than the incumbents, and further along than that usually implies.
 | March 2026 | Production traffic reaches a run rate of 10 million requests per quarter |
 | May 2026 | About 200,000 calls per month arrive from AI agents over Remote MCP |
 | September 2026 | Roxy Ephemeris reads the NASA JPL DE440 ephemeris directly; the open benchmark median is 0.05 arcseconds |
+| September 2026 | 4.5 million+ API requests per month, 1.5 million+ of them from AI agents |
 
 RoxyAPI is independently operated, and every number on this page is one you can check.
 
@@ -245,7 +249,7 @@ No. RoxyAPI runs Roxy Ephemeris, an in-house engine that reads the NASA JPL DE44
 Clone the [MIT benchmark](https://github.com/RoxyAPI/astrology-api-benchmark "Reproducible MIT licensed accuracy benchmark for any astrology API"), run it against RoxyAPI, then against any other provider. The methodology page publishes the corpus, tolerances and reference sources behind every domain.
 
 **What does it cost to add a domain?**
-Nothing. Every plan includes every domain, every endpoint, Remote MCP, the SDKs, the UI components, the widgets and the 10+ interpretation languages, and new domains join the plan you already have.
+Nothing. Every plan includes every domain, every endpoint, Remote MCP, the SDKs, the UI components, the widgets, branded reports and the 10+ interpretation languages, and new domains join the plan you already have.
 
 **Can I use it in a closed-source commercial product?**
 Yes. Every plan is a commercial license with no copyleft and no per-user royalties. The MIT templates and UI components can ship under your own brand.
@@ -261,6 +265,7 @@ Nothing about your end users is kept: birth data is computed in memory and never
 | Documentation | https://roxyapi.com/docs |
 | Remote MCP setup | https://roxyapi.com/docs/mcp |
 | Pricing | https://roxyapi.com/pricing |
+| Branded reports | https://roxyapi.com/reports |
 | Methodology | https://roxyapi.com/methodology |
 | Transparency report | https://roxyapi.com/transparency |
 | Changelog | https://roxyapi.com/changelog |
@@ -271,6 +276,6 @@ Nothing about your end users is kept: birth data is computed in memory and never
 
 1. Get a key at [roxyapi.com/pricing](https://roxyapi.com/pricing "RoxyAPI plans and quotas: every domain included on every plan, instant activation"). Every plan includes every domain.
 2. Try the [live playground](https://roxyapi.com/api-reference "RoxyAPI live playground with real production responses and no signup").
-3. Install an SDK, paste a widget, or point your agent at a Remote MCP server.
+3. Install an SDK, paste a widget, sell a branded report, or point your agent at a Remote MCP server.
 
 Questions or partnerships: [roxyapi.com/contact](https://roxyapi.com/contact "Contact RoxyAPI for integration help, procurement questions, or partnership inquiries"). Built by [Roxy Labs](https://roxyapi.com). The Stripe of insight APIs.
